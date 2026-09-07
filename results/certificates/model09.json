@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "valid": true,
+  "method": "outward_convex_boundary_single_cover",
+  "arithmetic": "float64 numerical certificate; no exact-predicate claim",
+  "structural": {
+    "valid": true,
+    "errors": [],
+    "checks": {
+      "finite": true,
+      "nondegenerate": true,
+      "edge_manifold": true,
+      "watertight": true,
+      "opposite_edge_orientation": true,
+      "connected": true,
+      "positive_signed_volume": true,
+      "z_extrema": true,
+      "cylinder_containment": true,
+      "cylinder_contact": true,
+      "self_intersection_free": null
+    },
+    "metrics": {
+      "triangle_count": 244,
+      "unique_vertex_count": 124,
+      "edge_count": 366,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "orientation_mismatch_edge_count": 0,
+      "face_component_count": 1,
+      "signed_volume": 1.4070420182871868,
+      "z_min": -1.0,
+      "z_max": 1.0,
+      "z_min_error": 0.0,
+      "z_max_error": 0.0,
+      "xy_radius_max": 0.6699999998590653,
+      "cylinder_radius": 0.67,
+      "cylinder_contact_error": 1.4093470834808386e-10
+    },
+    "self_intersection": {
+      "checked": false,
+      "note": "self-intersection is not checked by this validator"
+    }
+  },
+  "checks": {
+    "outward_supporting_faces": true,
+    "convex_hull_volume_agreement": true,
+    "convex_hull_area_agreement": true,
+    "spherical_topology": true,
+    "manifold_vertex_links": true,
+    "no_duplicate_triangles": true
+  },
+  "metrics": {
+    "length_scale": 2.552708154986958,
+    "support_plane_absolute_tolerance": 2.5527081549869576e-07,
+    "maximum_support_plane_violation": 3.181578744904101e-08,
+    "maximum_triangle_to_hull_plane_distance": 9.768581499258744e-10,
+    "minimum_alignment_with_hull_normal": 0.9999999999999889,
+    "mesh_volume": 1.4070420182871868,
+    "convex_hull_volume": 1.4070420189238542,
+    "relative_volume_error": 4.5248640546318513e-10,
+    "mesh_area": 6.518844551549099,
+    "convex_hull_area": 6.5188445515491,
+    "relative_area_error": 1.362478293011395e-16,
+    "euler_characteristic": 2
+  },
+  "tolerances": {
+    "relative_support_plane": 1e-07,
+    "relative_area_and_volume": 1e-07
+  },
+  "errors": [],
+  "non_self_intersection": {
+    "certified_numerically": true,
+    "scope": "convex-boundary single-cover check at stated tolerances",
+    "generic_triangle_intersection_test": false,
+    "limitation": "Nonconvex features or intersections below the reported tolerances remain unresolved."
+  },
+  "stl": {
+    "name": "submission_shape.stl",
+    "sha256": "f268d4264acde081c78a62eb0e6a4039b3ef0ce986f8e984296baefb4aa84073",
+    "size_bytes": 59189
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "method": "optimal_transport_convex_reconstruction",
+  "acquisition": {
+    "source": "real",
+    "curve_type": "intensity",
+    "target_samples": 90,
+    "angles_degrees": [
+      0,
+      45,
+      90,
+      135,
+      225,
+      270,
+      315
+    ],
+    "view_labels": [
+      "horizontal_1",
+      "horizontal_2",
+      "top",
+      "bottom"
+    ],
+    "calibration_mode": "baseline",
+    "baseline": {
+      "name": "real_target_intensity_20260524",
+      "target_source": "real",
+      "curve_type": "intensity",
+      "phase_sign": -1,
+      "azimuth_offset": 0.0,
+      "azimuth_sign": 1,
+      "alpha_from": "horizontal",
+      "top_z_sign": 1,
+      "scattering": "lommel_seeliger",
+      "lommel_seeliger_weight": 0.0,
+      "visibility_mode": "view_zbuffer",
+      "occlusion_grid_size": 128,
+      "occlusion_depth_tolerance": 0.01,
+      "occlusion_softness": 0.005,
+      "phase_batch_size": 60,
+      "angle_phase_shifts_degrees": {
+        "45": -1.0,
+        "90": -7.0,
+        "135": -4.0,
+        "225": 4.0,
+        "270": 7.0,
+        "315": 1.0
+      },
+      "contrast_gain": 0.7349732235818749
+    }
+  },
+  "phase1": {
+    "shape": {
+      "n_rows": 8,
+      "l_max": 6,
+      "m_max": 6,
+      "min_degree": 2,
+      "lambert_coefficient": 100.0,
+      "lommel_seeliger_coefficient": 1.0,
+      "phase_amplitude": 0.0,
+      "phase_width": 0.1,
+      "phase_slope": 0.0,
+      "epsilon": 1e-09,
+      "reference_spheroid_radius": "released_cylinder_radius",
+      "reference_spheroid_gamma": 1.0
+    },
+    "objective": {
+      "raw_weight": 1.0,
+      "lightcurve_bhs_weight": 0.0,
+      "surface_bhs_weight": 0.0,
+      "surface_wasserstein_weight": 0.03,
+      "surface_moment_weight": 0.2,
+      "sobolev_weight": 0.0,
+      "sobolev_order": 2.0,
+      "lightcurve_epsilon": 0.001,
+      "surface_wasserstein_ground_cost": "chordal",
+      "surface_wasserstein_epsilon": 0.05,
+      "surface_wasserstein_iterations": 200
+    },
+    "optimizer": {
+      "starts": 3,
+      "steps": 300,
+      "learning_rate": 0.03,
+      "initial_scale": 0.15,
+      "lbfgs_iterations": 100,
+      "seed": 20260820
+    },
+    "optimizer_seed_rule": "base_seed_plus_model_id"
+  },
+  "quantization": {
+    "requested_facets": 64,
+    "config": {
+      "seed": 112459118,
+      "n_starts": 8,
+      "max_iterations": 200,
+      "objective_tolerance": 1e-13,
+      "center_tolerance_radians": 1e-12,
+      "closure_tolerance": 1e-10,
+      "unit_normal_tolerance": 1e-10,
+      "minimum_resultant": 2.2250738585072014e-308,
+      "transport_feasibility_tolerance": 1e-10,
+      "transport_mass_scale": 100000000.0,
+      "transport_marginal_residual_tolerance": 5e-10,
+      "restart_wasserstein2_tie_tolerance": 1e-12,
+      "normalized_output_mass_floor": 1e-08
+    }
+  },
+  "phase2": {
+    "area_log_rmse_tolerance": 1e-06,
+    "max_newton_iterations": 30,
+    "max_continuation_stages": 160,
+    "initial_continuation_step": 0.08,
+    "minimum_continuation_step": 2.5e-05,
+    "continuation_growth": 1.5,
+    "max_line_search_steps": 24,
+    "armijo_fraction": 0.0001,
+    "minimum_support_fraction": 1e-09,
+    "closure_tolerance": 1e-10,
+    "normal_rank_tolerance": 1e-10,
+    "vertex_merge_tolerance": 2e-09,
+    "qhull_options": "Qx"
+  },
+  "frame": {
+    "match_radius": true,
+    "z_min": -1.0,
+    "z_max": 1.0,
+    "translation": "volume centroid first, then z extrema only",
+    "orientation": "light direction (-1,0,0); original lightcurve zero phase; no post-fit rotation"
+  },
+  "verification": {
+    "parent_prediction_max_abs_tolerance": 5e-11,
+    "triangle_prediction_max_abs_tolerance": 1e-05,
+    "framed_closure_tolerance": 1e-10
+  },
+  "precision": "float64",
+  "selection": {
+    "policy": "fixed_public_calibration",
+    "lambda_w": 0.03,
+    "requested_facets": 64,
+    "calibration_models": [
+      1,
+      2,
+      3
+    ]
+  },
+  "cylinder_radii": {
+    "1": 1.12,
+    "2": 1.42,
+    "3": 0.88,
+    "4": 1.475,
+    "5": 1.22,
+    "6": 0.925,
+    "7": 1.205,
+    "8": 1.24,
+    "9": 0.67,
+    "10": 3.95
+  }
+}

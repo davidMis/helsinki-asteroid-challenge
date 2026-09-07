@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "installation": "Fresh venv with separately downloaded exact dependency pins; package installed from this repository; no parent-project import paths.",
+  "command": "python -m hac_forward.reconstruct --data-dir data --models 1,2,3 --output-dir runs/public --config configs/submission.json",
+  "records": [
+    {
+      "model_id": 1,
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "input_sha256": "75008a61db309cfdbad7826e5458b0280f5e04f5655caabb39f12a95e3d22356",
+      "config_sha256": "7edff4198cd1a6b8a1d90512a5b280205f4226846b7db95cc5b0cf224d576e2b",
+      "all_inference_sources_match_final": true,
+      "excluded_non_inference_modules": [
+        "certification.py",
+        "package.py"
+      ],
+      "run_manifest_sha256": "4e6ad645cc843ff2eb11c0cde650d2d0b7bcc1d536d5b9c16f650e16f8bbcdfa",
+      "elapsed_seconds": 62.8253902499855
+    },
+    {
+      "model_id": 2,
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "input_sha256": "8ac52e2e3ba663be1727ad2e85fe9384d3b186a02cfa740e60716495777ca480",
+      "config_sha256": "7edff4198cd1a6b8a1d90512a5b280205f4226846b7db95cc5b0cf224d576e2b",
+      "all_inference_sources_match_final": true,
+      "excluded_non_inference_modules": [
+        "certification.py",
+        "package.py"
+      ],
+      "run_manifest_sha256": "f09be96276d245750498bdca61a84095e69663f6f176380e0482b49a9848c846",
+      "elapsed_seconds": 67.81425666599534
+    },
+    {
+      "model_id": 3,
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "input_sha256": "96fe4bdf398371cff05780dd8e913dfb520457fd38e7d141c9a07b3d57548c19",
+      "config_sha256": "7edff4198cd1a6b8a1d90512a5b280205f4226846b7db95cc5b0cf224d576e2b",
+      "all_inference_sources_match_final": true,
+      "excluded_non_inference_modules": [
+        "certification.py",
+        "package.py"
+      ],
+      "run_manifest_sha256": "91b7b6d497f8fab719b7984a17d85340b081be8a40bb798081a0f40a91055710",
+      "elapsed_seconds": 66.8918332500034
+    }
+  ],
+  "note": "Packaging gates were strengthened while public inference ran. Only numerical inference sources are compared here; all secret runs use the final complete source hash set."
+}

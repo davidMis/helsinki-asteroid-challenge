@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "provenance": "Original selected public reconstructions, before standalone extraction. Contains reconstructed geometry, never public truth geometry.",
+  "calibration_manifest_sha256": "f9eeb5a85ee969035a0e50c96bb61203548e150af4ff43ca03efb75f44ee73e2",
+  "lambda_w": 0.03,
+  "requested_k": 64,
+  "absolute_tolerance": 1e-06,
+  "records": [
+    {
+      "model_id": 1,
+      "candidate_id": "cells/model01/lambda_w_3em002/k0064/mass_floor_1em008",
+      "original_phase1_metadata_sha256": "c02d35aba535d7d0472c6492f3ecff212f3e21bb8032b55d30aca1e4d2b02e5c",
+      "original_stl_sha256": "ff0179bc8a3a50cc6864b04c24e9216244b05de1382a5609f80bf58bc0850fb3",
+      "input_sha256": "75008a61db309cfdbad7826e5458b0280f5e04f5655caabb39f12a95e3d22356",
+      "triangle_weighted_rmse": 0.03750430893398956,
+      "effective_k": 64
+    },
+    {
+      "model_id": 2,
+      "candidate_id": "cells/model02/lambda_w_3em002/k0064/mass_floor_1em008",
+      "original_phase1_metadata_sha256": "3b1e9c8ab75af561b66791f26de92bc15f3dce06835fd15687d86acfa88b1cee",
+      "original_stl_sha256": "5a7e74ce5855dca799c1fb188d6b593798b32cd56cedcf62bbb5b670d02f0274",
+      "input_sha256": "8ac52e2e3ba663be1727ad2e85fe9384d3b186a02cfa740e60716495777ca480",
+      "triangle_weighted_rmse": 0.28078279731025224,
+      "effective_k": 45
+    },
+    {
+      "model_id": 3,
+      "candidate_id": "cells/model03/lambda_w_3em002/k0064/mass_floor_1em008",
+      "original_phase1_metadata_sha256": "4855b654dc1780be166df28824aa07785886f90933c438db643eba8a77d0a1ea",
+      "original_stl_sha256": "e67d15daf566c870a1981afb68a0961b6ef887e01cb208523e6830302dea3af0",
+      "input_sha256": "96fe4bdf398371cff05780dd8e913dfb520457fd38e7d141c9a07b3d57548c19",
+      "triangle_weighted_rmse": 0.06323003323099534,
+      "effective_k": 64
+    }
+  ],
+  "npz_sha256": "55e9496f3465974273006091f01baed812dd6a6e8edcf38b06921e02499fd5d2"
+}

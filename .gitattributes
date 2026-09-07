@@ -1,0 +1,3 @@
+# Preserve the numerically verified extraction bytes, including EOF separators.
+src/hac_forward/*.py whitespace=-blank-at-eof
+*.stl text eol=lf

@@ -1,0 +1,10 @@
+\begin{tikzpicture}[>=Stealth,scale=0.95]
+\fill[wash](-2,-.18)rectangle(2,.0);
+\draw[thick,ink](-2,0)--(2,0);
+\draw[->,very thick,color=ink](0,0)--(0,2.3)node[above,font=\small]{outward normal $n$};
+\draw[->,very thick,color=accent](0,0)--(-2.3,1.9)node[above left,font=\small]{toward light $s$};
+\draw[->,very thick,color=accent](0,0)--(2.15,1.45)node[above right,font=\small]{toward camera $v$};
+\draw[ink!65] (0,.8) arc[start angle=90,end angle=140.4,radius=.8];
+\draw[ink!65] (.0,1.02) arc[start angle=90,end angle=34,radius=1.02];
+\node[font=\small,align=center] at (0,-.75) {The facet contributes only when $n\!\cdot\!s>0$ and $n\!\cdot\!v>0$.\\The directions are expressed in coordinates that rotate with the body.};
+\end{tikzpicture}

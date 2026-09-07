@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "settings": {
+    "pitch": 0.05,
+    "theta_degrees": 0.0,
+    "voxel_score": "1-measure2",
+    "projection_score": "unmodified_native_matlab_twoDmetric",
+    "combined_score": "voxel_score+projection_score",
+    "calibration_convention": "released_example_settings_not_final_leaderboard_guarantee",
+    "candidate_normalization": "none"
+  },
+  "official_sources": {
+    "README_HAC2026_evaluation_codes.txt": {
+      "path": "external-release/Evaluation_measures/README_HAC2026_evaluation_codes.txt",
+      "size_bytes": 1112,
+      "sha256": "5d38706471454e90dd00ed7eb94b4b032dc9315785def38e51fcfbf2b1342903"
+    },
+    "Voxel measure - Python/metrics.py": {
+      "path": "external-release/Evaluation_measures/Voxel measure - Python/metrics.py",
+      "size_bytes": 2575,
+      "sha256": "5a4663e119832e567971b5791463e6e176c054fa32ca6fa188923d0c9d13ce00"
+    },
+    "Voxel measure - Python/comparison_example.py": {
+      "path": "external-release/Evaluation_measures/Voxel measure - Python/comparison_example.py",
+      "size_bytes": 450,
+      "sha256": "823d6a1b5b070628b123b8f93eac2ecdc7e5e0633dda8ee001911028bc205e38"
+    },
+    "Projection measure - MATLAB/twoDmetric.m": {
+      "path": "external-release/Evaluation_measures/Projection measure - MATLAB/twoDmetric.m",
+      "size_bytes": 4833,
+      "sha256": "2dd2970e6711176d9803f3afbba9ff646277337574b3698349507af19e44c0ba"
+    },
+    "Projection measure - MATLAB/ComparisonExample2Dprojection.m": {
+      "path": "external-release/Evaluation_measures/Projection measure - MATLAB/ComparisonExample2Dprojection.m",
+      "size_bytes": 171,
+      "sha256": "12413a07679fecdffd669fbb0769cbcd411838f37f67c6307212a122a1d41a6e"
+    }
+  },
+  "local_sources": {
+    "python_adapter": {
+      "path": "evaluation/evaluate_public.py",
+      "size_bytes": 12804,
+      "sha256": "289955e43faafe9b956e2d48bbca7ed79e3ccb4c6233d9a829df7286b2a178c0"
+    },
+    "matlab_driver": {
+      "path": "evaluation/hac_evaluate_public.m",
+      "size_bytes": 2175,
+      "sha256": "fa4475a7eeee730cfc0d58001f7d225b1fa273214abe87e32a1d311effb3ea6c"
+    },
+    "stl_loader_writer": {
+      "path": "src/hac_forward/stl.py",
+      "size_bytes": 7420,
+      "sha256": "37306d354e573d8a020a3471509dcd0cab659e6b667d1803b8e585d62ac79375"
+    }
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.1",
+      "meshio": "5.3.5",
+      "trimesh": "4.12.2"
+    },
+    "matlab_executable": "/Applications/MATLAB_R2024b.app/bin/matlab",
+    "matlab": {
+      "version": "24.2.0.2712019 (R2024b)",
+      "release": "2024b",
+      "computer": "MACA64",
+      "twoDmetric_path": "external-release/Evaluation_measures/Projection measure - MATLAB/twoDmetric.m",
+      "installed_products": [
+        {
+          "Name": "Image Processing Toolbox",
+          "Version": "24.2",
+          "Release": "(R2024b)",
+          "Date": "21-Jun-2024"
+        },
+        {
+          "Name": "MATLAB",
+          "Version": "24.2",
+          "Release": "(R2024b)",
+          "Date": "21-Jun-2024"
+        },
+        {
+          "Name": "Statistics and Machine Learning Toolbox",
+          "Version": "24.2",
+          "Release": "(R2024b)",
+          "Date": "21-Jun-2024"
+        },
+        {
+          "Name": "Symbolic Math Toolbox",
+          "Version": "24.2",
+          "Release": "(R2024b)",
+          "Date": "21-Jun-2024"
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "model_id": 1,
+      "candidate_stl": {
+        "path": "runs/public/model01/submission_shape.stl",
+        "size_bytes": 58864,
+        "sha256": "ff0179bc8a3a50cc6864b04c24e9216244b05de1382a5609f80bf58bc0850fb3"
+      },
+      "run_manifest": {
+        "path": "runs/public/model01/run.json",
+        "size_bytes": 12695,
+        "sha256": "4e6ad645cc843ff2eb11c0cde650d2d0b7bcc1d536d5b9c16f650e16f8bbcdfa"
+      },
+      "target": {
+        "raw_stl": {
+          "path": "external-release/AsteroidModel01_shape_public/asteroid1.stl",
+          "size_bytes": 219669910,
+          "sha256": "126d0017096209bf6c92b2c827b0974cc8ab97d6ce787b61162b4a72df1c71ce"
+        },
+        "normalized_stl": {
+          "path": "runs/official_public/targets/target_model01.stl",
+          "size_bytes": 193091335,
+          "sha256": "40d29f3c4faa532adf63242a8630857e88c39415f9bedb35d63661c73222a668"
+        },
+        "normalization": {
+          "offset": [
+            0.0,
+            0.0,
+            0.021004237840250184
+          ],
+          "z_half_extent_divisor": 3.620030282476586,
+          "center_xy": false,
+          "all_triangles_preserved": true,
+          "triangle_count": 800000,
+          "serialization": "ASCII_STL_9_significant_digits"
+        }
+      },
+      "voxel": {
+        "measure1_loss": 0.07205596051976293,
+        "measure2_loss": 0.03737450830740328,
+        "voxel_iou_score": 0.9279440394802371,
+        "voxel_score": 0.9626254916925967,
+        "elapsed_seconds": 4.095889541000361
+      },
+      "projection": {
+        "model_id": 1,
+        "theta": 0,
+        "status": "ok",
+        "projection_score": 0.9910815093508886,
+        "elapsed_seconds": 51.38548516666667,
+        "error": ""
+      },
+      "total_score": 1.9537070010434854
+    },
+    {
+      "model_id": 2,
+      "candidate_stl": {
+        "path": "runs/public/model02/submission_shape.stl",
+        "size_bytes": 40152,
+        "sha256": "5a7e74ce5855dca799c1fb188d6b593798b32cd56cedcf62bbb5b670d02f0274"
+      },
+      "run_manifest": {
+        "path": "runs/public/model02/run.json",
+        "size_bytes": 12696,
+        "sha256": "f09be96276d245750498bdca61a84095e69663f6f176380e0482b49a9848c846"
+      },
+      "target": {
+        "raw_stl": {
+          "path": "external-release/AsteroidModel02_shape_public/asteroid2.stl",
+          "size_bytes": 111691869,
+          "sha256": "4344f185254fa9c5e4f406b40896b1fcae5c80895c7894cd12d5a9ebd53df614"
+        },
+        "normalized_stl": {
+          "path": "runs/official_public/targets/target_model02.stl",
+          "size_bytes": 93799873,
+          "sha256": "745049c6a4327ec19dc73aee1288c7a52eb83f0120e576b7f6496e70546e923f"
+        },
+        "normalization": {
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "z_half_extent_divisor": 3.0,
+          "center_xy": false,
+          "all_triangles_preserved": true,
+          "triangle_count": 537950,
+          "serialization": "ASCII_STL_9_significant_digits"
+        }
+      },
+      "voxel": {
+        "measure1_loss": 0.19168152456668508,
+        "measure2_loss": 0.10599987069244199,
+        "voxel_iou_score": 0.8083184754333149,
+        "voxel_score": 0.894000129307558,
+        "elapsed_seconds": 3.1467004169826396
+      },
+      "projection": {
+        "model_id": 2,
+        "theta": 0,
+        "status": "ok",
+        "projection_score": 0.9675972434871638,
+        "elapsed_seconds": 33.798056125,
+        "error": ""
+      },
+      "total_score": 1.861597372794722
+    },
+    {
+      "model_id": 3,
+      "candidate_stl": {
+        "path": "runs/public/model03/submission_shape.stl",
+        "size_bytes": 59101,
+        "sha256": "e67d15daf566c870a1981afb68a0961b6ef887e01cb208523e6830302dea3af0"
+      },
+      "run_manifest": {
+        "path": "runs/public/model03/run.json",
+        "size_bytes": 12695,
+        "sha256": "91b7b6d497f8fab719b7984a17d85340b081be8a40bb798081a0f40a91055710"
+      },
+      "target": {
+        "raw_stl": {
+          "path": "external-release/AsteroidModel03_shape_public/asteroid3.stl",
+          "size_bytes": 1657582,
+          "sha256": "5a2a47190a36f4eb1d9ac7b28c355c7702afff5566df1a1fa2817a3c104343be"
+        },
+        "normalized_stl": {
+          "path": "runs/official_public/targets/target_model03.stl",
+          "size_bytes": 1454674,
+          "sha256": "a102178ef35862b1a2f6753a154967233496a9726f182b91e94387c2677782f2"
+        },
+        "normalization": {
+          "offset": [
+            0.0,
+            0.0,
+            -0.4824874094260958
+          ],
+          "z_half_extent_divisor": 4.0,
+          "center_xy": false,
+          "all_triangles_preserved": true,
+          "triangle_count": 5996,
+          "serialization": "ASCII_STL_9_significant_digits"
+        }
+      },
+      "voxel": {
+        "measure1_loss": 0.4290358997516369,
+        "measure2_loss": 0.27310356721952345,
+        "voxel_iou_score": 0.5709641002483631,
+        "voxel_score": 0.7268964327804766,
+        "elapsed_seconds": 0.11787099999492057
+      },
+      "projection": {
+        "model_id": 3,
+        "theta": 0,
+        "status": "ok",
+        "projection_score": 0.9506453015991585,
+        "elapsed_seconds": 0.452069,
+        "error": ""
+      },
+      "total_score": 1.677541734379635
+    }
+  ],
+  "mean_total_score": 1.8309487027392806,
+  "original_full_receipt_sha256": "90e6f335d74e21cb3082975339e893bd8c2002c86fb03e9b5d27822988ff066c",
+  "exact_match_to_original_selected_scores": true
+}

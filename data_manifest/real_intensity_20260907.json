@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-07",
+  "source_page": "https://fips.fi/data-challenges/helsinki-asteroid-challenge-2026/",
+  "data_url": "https://www.dropbox.com/scl/fo/gcqw0ffbt2xa6vfzlhu51/AESiKo8nIYUKRU_6agUcF1g?dl=0&rlkey=4o0tiegpeiepxf9ikvnnzfh2s",
+  "purpose": "Only real intensity observations are inputs to reconstruction; no reference meshes required.",
+  "files": [
+    {
+      "model_id": 1,
+      "path": "AsteroidModel01_shape_public/Asteroid1_lightcurve_data/Asteroid01_lightcurve_intensity.txt",
+      "size_bytes": 450668,
+      "sha256": "75008a61db309cfdbad7826e5458b0280f5e04f5655caabb39f12a95e3d22356"
+    },
+    {
+      "model_id": 2,
+      "path": "AsteroidModel02_shape_public/Asteroid2_lightcurve_data/Asteroid02_lightcurve_intensity.txt",
+      "size_bytes": 414476,
+      "sha256": "8ac52e2e3ba663be1727ad2e85fe9384d3b186a02cfa740e60716495777ca480"
+    },
+    {
+      "model_id": 3,
+      "path": "AsteroidModel03_shape_public/Asteroid3_lightcurve_data/Asteroid03_lightcurve_intensity.txt",
+      "size_bytes": 414630,
+      "sha256": "96fe4bdf398371cff05780dd8e913dfb520457fd38e7d141c9a07b3d57548c19"
+    },
+    {
+      "model_id": 4,
+      "path": "AsteroidModel04_shape_secret/Asteroid4_lightcurve_data/Asteroid04_lightcurve_intensity.txt",
+      "size_bytes": 450668,
+      "sha256": "86e24cca3d1e40a0e49aa820896ed1faf8b75d2218783a3812887785d7e2fed5"
+    },
+    {
+      "model_id": 5,
+      "path": "AsteroidModel05_shape_secret/Asteroid5_lightcurve_data/Asteroid05_lightcurve_intensity.txt",
+      "size_bytes": 413945,
+      "sha256": "942ad381b0ce9653e4d6c5edfee0723653d06400fda064cb29143bca6f2d2d24"
+    },
+    {
+      "model_id": 6,
+      "path": "AsteroidModel06_shape_secret/Asteroid6_lightcurve_data/Asteroid06_lightcurve_intensity.txt",
+      "size_bytes": 450668,
+      "sha256": "263e564eae783f6990fe5e666737deb01728d59e75c3d0b043b941e68533c088"
+    },
+    {
+      "model_id": 7,
+      "path": "AsteroidModel07_shape_secret/Asteroid7_lightcurve_data/Asteroid07_lightcurve_intensity.txt",
+      "size_bytes": 415050,
+      "sha256": "d6e63534293f4c7fe7935ce303e52e4b155c6705c8255f7944de6b3bf6201dbb"
+    },
+    {
+      "model_id": 8,
+      "path": "AsteroidModel08_shape_secret/Asteroid8_lightcurve_data/Asteroid08_lightcurve_intensity.txt",
+      "size_bytes": 450668,
+      "sha256": "1efb363b8c7c76ac27666c0ca6f724a3336300ea3f8d0eb580fdb8518ed1ab48"
+    },
+    {
+      "model_id": 9,
+      "path": "AsteroidModel09_shape_secret/Asteroid9_lightcurve_data/Asteroid09_lightcurve_intensity.txt",
+      "size_bytes": 414015,
+      "sha256": "4b9e33dd718def188c1855fc73759ddc776d4c20d29a743a953cfce4fe4a6031"
+    },
+    {
+      "model_id": 10,
+      "path": "AsteroidModel10_shape_secret/Asteroid10_lightcurve_data/Asteroid010_lightcurve_intensity.txt",
+      "size_bytes": 450668,
+      "sha256": "f7fa84db867e0268c64635c98adf6e061e92230a621ee4b811bbb6aeecd9a895"
+    }
+  ]
+}

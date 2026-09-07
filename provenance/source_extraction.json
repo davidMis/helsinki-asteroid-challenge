@@ -1,0 +1,1772 @@
+{
+  "schema_version": 1,
+  "extraction": "Transitive top-level symbol dependency closure, preserving selected function/class/assignment ASTs. Imports reduced to used symbols. Includes custom derivative registrations.",
+  "files": [
+    {
+      "path": "src/hac_forward/area_measure_transform.py",
+      "original_path": "src/hac_forward/area_measure_transform.py",
+      "original_sha256": "a4dd1d109c560dbc91df91bbd536171e0c038d74afb2f4558efea7d36c1aebc6",
+      "extracted_sha256": "0cc057a8a765d159cf3007c8dd488eac30bfe750506e9afb57e71ef4107b407f",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "AreaMeasurePushforwardDiagnostics"
+          ],
+          "original_line": 24,
+          "ast_sha256": "aea6b831cb7e3670955bf1930cce2619ca6ba1916e1a377bc772040c5b75acec"
+        },
+        {
+          "symbols": [
+            "AreaMeasurePushforward"
+          ],
+          "original_line": 41,
+          "ast_sha256": "2866c122316718f2c255d0cca57b6972205763546cadbc76b6d68af1a189dd1a"
+        },
+        {
+          "symbols": [
+            "submission_frame_linear_map"
+          ],
+          "original_line": 53,
+          "ast_sha256": "150c258a606bef32347bae90780150400a50a5d72e10d2e7dc04454d9bd74afd"
+        },
+        {
+          "symbols": [
+            "pushforward_area_measure"
+          ],
+          "original_line": 85,
+          "ast_sha256": "c934d88611a7028740a51767d12f5f1d72b3d652efe00a1408a36821b7417306"
+        },
+        {
+          "symbols": [
+            "pushforward_through_submission_frame"
+          ],
+          "original_line": 170,
+          "ast_sha256": "de78d2bb51df7a70c587d9f8989662a8a137f0ce22e9396ee384f866b15824f2"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/atomic_gaussian_image.py",
+      "original_path": "src/hac_forward/atomic_gaussian_image.py",
+      "original_sha256": "51e406b8be4d8f2682e94c0a955118e2367d7585a30d8df18feb0956a917cb09",
+      "extracted_sha256": "ebb9621368a525dddc391d7faea881e5851e8b5a888799ebc3ed7e396e27b4e4",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "AtomicCoarseningDiagnostics"
+          ],
+          "original_line": 41,
+          "ast_sha256": "f16f1edbbca163468c7370c8460e31724d3e32b19662ebe5a9793c7d220e3fdc"
+        },
+        {
+          "symbols": [
+            "AtomicGaussianImage"
+          ],
+          "original_line": 62,
+          "ast_sha256": "43de5b24f64217d6fe6ba84aa0b8256ed2a8757af85ca32b0c3a54e2856ea9b8"
+        },
+        {
+          "symbols": [
+            "_Cluster"
+          ],
+          "original_line": 73,
+          "ast_sha256": "29ee807026ccfc50f66d747aacada9b077abac8b418d91d46a68e36618a2517e"
+        },
+        {
+          "symbols": [
+            "_stable_norm"
+          ],
+          "original_line": 84,
+          "ast_sha256": "55f38c32d339e54e14b59f9149ef0aa0b4f7b6add503165e84c5035436267856"
+        },
+        {
+          "symbols": [
+            "closure_preserving_atomic_hierarchy"
+          ],
+          "original_line": 91,
+          "ast_sha256": "67f781ac2717d5c2a1b06101c17884c39dca2d1706d2cbf6686153553288d1a6"
+        },
+        {
+          "symbols": [
+            "closure_preserving_atomic_coarsen"
+          ],
+          "original_line": 190,
+          "ast_sha256": "11c84842160cc2c08be21a3fa5d9cc38e927078f79e3282f003f423d5da07d59"
+        },
+        {
+          "symbols": [
+            "_validate_measure"
+          ],
+          "original_line": 241,
+          "ast_sha256": "1d9ded501f1424fa6543dfdf1444f2e6456702aeae4a637c98dab42d4fda5cf6"
+        },
+        {
+          "symbols": [
+            "_merge_key"
+          ],
+          "original_line": 272,
+          "ast_sha256": "3bd2fd5c23e05d967d04bc2168b73f35af2528048b95c12189e98099330c5ee5"
+        },
+        {
+          "symbols": [
+            "_snapshot"
+          ],
+          "original_line": 294,
+          "ast_sha256": "0ee361403d5a8b93007652909fd4a05ddb958c78e011909bc461307561aa6688"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/atomic_refinement_solver.py",
+      "original_path": "src/hac_forward/atomic_refinement_solver.py",
+      "original_sha256": "ebdf1b732ff1877e7c1a65576b8f814bc9043d5ee3944516dcf39ab14fee236c",
+      "extracted_sha256": "8f209d10c53664c67ed2fd922a882d4df5a950dae749f8c73b3748c0d123aa8c",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "triangle_area_measure"
+          ],
+          "original_line": 693,
+          "ast_sha256": "79eba00e8dceae6f9b68955b7c03db689c142b1bef8aa0e72518f38fbafcf089"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/baseline.py",
+      "original_path": "src/hac_forward/baseline.py",
+      "original_sha256": "342902c358ef276305a9ba01d2373903f532020d37da595152b5fd74d6e8d99e",
+      "extracted_sha256": "8a39063664458816c7c4aef1bf39dc7727cd3e05bddf808c073f87cbe63797ab",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "ForwardModelBaseline"
+          ],
+          "original_line": 8,
+          "ast_sha256": "0872b28c59a1ed51e68a3e13c4960ad59e4be71f7e37e8158a49e6704493cf9d"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/bhs_phase1.py",
+      "original_path": "src/hac_forward/bhs_phase1.py",
+      "original_sha256": "b8a35c58783e0c2d4b1df3fd5a09f729ec0d1092acef17a25e1a95bc9ee9fd51",
+      "extracted_sha256": "4151727731081044180e14f1e8dcc3b6392255a4cd8aa6c72617a17c96be1903",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "BHSOptimizerConfig"
+          ],
+          "original_line": 56,
+          "ast_sha256": "d7a26e84f7d84366d2bc70a4707d7bd3b48c01015444ca9efeba5d77127efc9d"
+        },
+        {
+          "symbols": [
+            "BHSPhase1Result"
+          ],
+          "original_line": 86,
+          "ast_sha256": "d81abe53ac76b742835a9965f0fcf62899b3208d1e2bed89a43ab9ff553c1ca1"
+        },
+        {
+          "symbols": [
+            "harmonic_coefficient_metadata"
+          ],
+          "original_line": 231,
+          "ast_sha256": "c272be058410999b886eaad74f0636203c9389add663af9ba4daf6eeec75d638"
+        },
+        {
+          "symbols": [
+            "fit_bhs_surface_measure"
+          ],
+          "original_line": 261,
+          "ast_sha256": "005c8657b1f4ac1bab0873e027d2ed74a4223d879ea351c2536346ec8ef617db"
+        },
+        {
+          "symbols": [
+            "quadrature_masses"
+          ],
+          "original_line": 847,
+          "ast_sha256": "93cb1d35990c6fa0b4f36d96a15919bebe92047b7330affce20533957db6abf7"
+        },
+        {
+          "symbols": [
+            "_polish_lbfgs"
+          ],
+          "original_line": 1039,
+          "ast_sha256": "4041384c9ce0dce398dbc8e5494664b3f937f81135e98f2edc0a5c248b512aac"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/constants.py",
+      "original_path": "src/hac_forward/constants.py",
+      "original_sha256": "3943fb2634757de004f4a3a709bcce0b2819c605c820600c51cc1a5d583630f1",
+      "extracted_sha256": "a2aae2b32b9d65bf37470aca42c7cc0898d1114644179f5246363022dde284dc",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "ANGLES_DEGREES"
+          ],
+          "original_line": 5,
+          "ast_sha256": "df030a6f83c257e40c8c97eeeca7a5804f100c104094931a6565a2ae70e8a210"
+        },
+        {
+          "symbols": [
+            "VIEW_LABELS"
+          ],
+          "original_line": 6,
+          "ast_sha256": "36b72afe4292d8db5349ce45626f8952477019634e287460716642c3f29e3260"
+        },
+        {
+          "symbols": [
+            "TOP_CAMERA_ALPHA_DEGREES"
+          ],
+          "original_line": 13,
+          "ast_sha256": "598899a266f95090cbddfbae2cf5d2d0c5d08b46c7623808c7f1d7c7448095e5"
+        },
+        {
+          "symbols": [
+            "CYLINDER_RADII"
+          ],
+          "original_line": 23,
+          "ast_sha256": "952b9424957e2c0e07d5c112801956ecabfe06ec4d6e4b5d6c8264c501b1e1f8"
+        },
+        {
+          "symbols": [
+            "LIGHTCURVE_FILE_MODEL_TOKENS"
+          ],
+          "original_line": 56,
+          "ast_sha256": "40766af79f1ba8520e8ca13bc09bb7c7774d7e81f9a3323d3e7ed11cd1d2cbc7"
+        },
+        {
+          "symbols": [
+            "RELEASED_MODEL_IDS"
+          ],
+          "original_line": 60,
+          "ast_sha256": "1e1eb70181e9ac1930052e82ac0b8b0c79bae9e32beaf641fbcde66aa264605a"
+        },
+        {
+          "symbols": [
+            "LIGHT_DIRECTION"
+          ],
+          "original_line": 62,
+          "ast_sha256": "b3965451cded309a9a96ebb6587197245c797721aac8e1f29c138ef43e63793d"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/damit_model.py",
+      "original_path": "src/hac_forward/damit_model.py",
+      "original_sha256": "e569763c5f383baea2962b345aab7cff859c89cb9be59718675e299839dc3d53",
+      "extracted_sha256": "24be804043a3a2c495e8ee79c6e6d3e66edd0891b969e30199b6646f98d448ed",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "GaussianImageGrid"
+          ],
+          "original_line": 22,
+          "ast_sha256": "9bdb478009956403a92e333dd3c4ca22eb0b9dc893ea704eb9a2304ca64ec625"
+        },
+        {
+          "symbols": [
+            "harmonic_degrees"
+          ],
+          "original_line": 217,
+          "ast_sha256": "c34986bec93b20bc13296ef34eb0767034395747e7df8da225f7ba562871e8cc"
+        },
+        {
+          "symbols": [
+            "gaussian_image_grid"
+          ],
+          "original_line": 228,
+          "ast_sha256": "5e80966b89eaa4a1830bee8a131438ee57b890f2d61d67392bba23b3dcfcfe7e"
+        },
+        {
+          "symbols": [
+            "harmonic_basis"
+          ],
+          "original_line": 291,
+          "ast_sha256": "458b7f3699d9e4af4d110da7039e60cbd9fa1926a79a7ca353c3118497acd43a"
+        },
+        {
+          "symbols": [
+            "_standard_tri_faces"
+          ],
+          "original_line": 641,
+          "ast_sha256": "4102a16a0dceb2ddeb1faa3197360c86d56a7ebbcfb694d2a4cdffdf46649f65"
+        },
+        {
+          "symbols": [
+            "_associated_legendre_no_condon"
+          ],
+          "original_line": 718,
+          "ast_sha256": "9e4f1643518120f1ba22348f7d2fc62749112eb54c70707a053c9ac03770f088"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/gaussian_bhs.py",
+      "original_path": "src/hac_forward/gaussian_bhs.py",
+      "original_sha256": "7721dca8995cc46b3d6c8b4b87dffd1c7e2db72e4be0d8f85eb1e354c6fa0781",
+      "extracted_sha256": "f87ea37f4d7b697e3c25d6851335afddb83b6a3780c3f80f2af2e872f179aed3",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "ClosureConfig"
+          ],
+          "original_line": 35,
+          "ast_sha256": "396340d417a40113541c1e3f35387ac62762a2e8f6f46722496be32836f38c31"
+        },
+        {
+          "symbols": [
+            "ClosureDiagnostics"
+          ],
+          "original_line": 65,
+          "ast_sha256": "328103db7251532745256cac92416e951007969626d7539b1304409e2924c22f"
+        },
+        {
+          "symbols": [
+            "ClosureResult"
+          ],
+          "original_line": 83,
+          "ast_sha256": "b6fd58674d9aecd4364369015449c176d3ddbf167cf8d2c2b428bc5a5c2651c0"
+        },
+        {
+          "symbols": [
+            "JaxClosureDiagnostics"
+          ],
+          "original_line": 92,
+          "ast_sha256": "105339cbf666c67918d9a5c7319ed0928b6adc78e91660a8797d26fa857e9574"
+        },
+        {
+          "symbols": [
+            "DEFAULT_CLOSURE_CONFIG"
+          ],
+          "original_line": 117,
+          "ast_sha256": "d0f575daa272b3a42ad13613f290046cac0afcf0885d1388d0ad74647a76c0bd"
+        },
+        {
+          "symbols": [
+            "_FLOAT64_EPS"
+          ],
+          "original_line": 118,
+          "ast_sha256": "f945fce2311b25a7ae148db4a7cb8c97e7291d6ca892701a9ce0440d87681bfb"
+        },
+        {
+          "symbols": [
+            "_FLOAT64_TINY"
+          ],
+          "original_line": 119,
+          "ast_sha256": "44e57d20d117a8e6de39446748cfd5d5351abf461377d81703fc2f44adc57400"
+        },
+        {
+          "symbols": [
+            "close_masses_np"
+          ],
+          "original_line": 122,
+          "ast_sha256": "ca8a073b7806132cc1250316d2470b15da64eaa354e82b2f1f37941a6072e08d"
+        },
+        {
+          "symbols": [
+            "solve_closure_np"
+          ],
+          "original_line": 139,
+          "ast_sha256": "728ed1ded2529b42152e6f4c59b295cd4bc23afc257e866500d07d21786941eb"
+        },
+        {
+          "symbols": [
+            "close_masses_jax"
+          ],
+          "original_line": 231,
+          "ast_sha256": "af7ab59ac423df95e89b8feab1aeee200829b986868696851f711cf4c05d290a"
+        },
+        {
+          "symbols": [
+            "_validate_numpy_inputs"
+          ],
+          "original_line": 285,
+          "ast_sha256": "91dead554ce2072dfc43135f0ae753040437520d42e9e6ff3f873b7eadf5a1ca"
+        },
+        {
+          "symbols": [
+            "_prepare_jax_inputs"
+          ],
+          "original_line": 312,
+          "ast_sha256": "48a946d60beaaf9b2a44d32b1cc2b90af5a5978ea545efe0bf4ba47f090637a1"
+        },
+        {
+          "symbols": [
+            "_tilt_statistics_np"
+          ],
+          "original_line": 336,
+          "ast_sha256": "73b632d385a218c2c4bbdf7822774a218fda27ecfe07e080eac278ea70416a78"
+        },
+        {
+          "symbols": [
+            "_newton_direction_np"
+          ],
+          "original_line": 355,
+          "ast_sha256": "14eec3278357a3f826530443ca5c87d3fa8e985b32e20f387e6104b511cdbe3c"
+        },
+        {
+          "symbols": [
+            "_line_search_np"
+          ],
+          "original_line": 374,
+          "ast_sha256": "c56f458f1c3bea0890f1de92a28d031872042e7d966fbfa774cabc1eae9bb100"
+        },
+        {
+          "symbols": [
+            "_diagnostics_np"
+          ],
+          "original_line": 408,
+          "ast_sha256": "8a26972c8f37300e72d50c7e2ac0c3d5437d7ee6c5e2a78fc574917a3eb49ff2"
+        },
+        {
+          "symbols": [
+            "_tilt_statistics_jax"
+          ],
+          "original_line": 454,
+          "ast_sha256": "abd3eaa94dfe687ca91e5f309f74dd98fa1e16b1bfe6e00938b882ee270d5168"
+        },
+        {
+          "symbols": [
+            "_newton_direction_jax"
+          ],
+          "original_line": 473,
+          "ast_sha256": "2aa88bd24e9ea098854806232d9c570d00c4911dd92b7ce315f8f609df4cab0f"
+        },
+        {
+          "symbols": [
+            "_line_search_jax"
+          ],
+          "original_line": 501,
+          "ast_sha256": "3de2eb985d98accc5343b531ab0814e31aab76822ea165c5eba9dfa650fd95fc"
+        },
+        {
+          "symbols": [
+            "_solve_closure_jax_raw"
+          ],
+          "original_line": 562,
+          "ast_sha256": "a1d757e2ec98ac67c7f9ddd0a168929e70d618e94ab76d1267a3cc131850d3f3"
+        },
+        {
+          "symbols": [
+            "_close_masses_jax_implicit"
+          ],
+          "original_line": 686,
+          "ast_sha256": "674eda3afbd84fa870ee8653c36998bd50a0b455e3d5b0129783522cfbeb6b02"
+        },
+        {
+          "symbols": [
+            "_close_masses_jax_implicit_jvp"
+          ],
+          "original_line": 698,
+          "ast_sha256": "aca107de153ea658eb6af8cdfdf6aade3a60599f1cc0b39904f49ebcd8f866d2"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/gaussian_bhs_inversion.py",
+      "original_path": "src/hac_forward/gaussian_bhs_inversion.py",
+      "original_sha256": "5104ace97ea9cde538b2821b04cee8e7c1ffbf3606c0011890e08a2d7a8a9a4b",
+      "extracted_sha256": "c838bd9b57fcf21c6bdf62883f8330cc35a212dc3eaaadbe5a4c1f2198b5842c",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "GaussianBHSShapeConfig"
+          ],
+          "original_line": 50,
+          "ast_sha256": "31db4da7f7d5cb37cef7bf7fdd60b8525a9ad6798e309eab493f461c6ad638b1"
+        },
+        {
+          "symbols": [
+            "GaussianBHSObjectiveConfig"
+          ],
+          "original_line": 107,
+          "ast_sha256": "f58ea7b7c41704f23469b295d063d9dada6a0065916857f7ded3813f462bdf20"
+        },
+        {
+          "symbols": [
+            "active_harmonic_basis"
+          ],
+          "original_line": 156,
+          "ast_sha256": "436bb3ea5e24a4f213e828265ad7316ed72112419aa5fd226ce27255ee5f1850"
+        },
+        {
+          "symbols": [
+            "spheroid_reference_weights"
+          ],
+          "original_line": 181,
+          "ast_sha256": "ef3b952f445887a2d9d41b025f59519371885b40966e45413497374fff3f503a"
+        },
+        {
+          "symbols": [
+            "surface_reference_masses"
+          ],
+          "original_line": 229,
+          "ast_sha256": "e3d25276d2c07b465c7c154a934622af2f2a51f7da9334d89fb2f2e50d939d29"
+        },
+        {
+          "symbols": [
+            "log_density_jax"
+          ],
+          "original_line": 239,
+          "ast_sha256": "fac052bb1a33357caa35a984743f009ecd59408446beea5b08c6c2d6d6231d19"
+        },
+        {
+          "symbols": [
+            "closed_gaussian_masses_jax"
+          ],
+          "original_line": 259,
+          "ast_sha256": "b828f12a9b94b7c5846de0bf244e7f2a1aa8ac011abe54547419034d042097aa"
+        },
+        {
+          "symbols": [
+            "closed_gaussian_masses_np"
+          ],
+          "original_line": 278,
+          "ast_sha256": "03ebd1b8df42671beebdf9e74b1ad3481432d49c0f386b659a05b0864a61695f"
+        },
+        {
+          "symbols": [
+            "area_normal_table"
+          ],
+          "original_line": 304,
+          "ast_sha256": "24cc823fabcaeca346a061756e79c090a6069fff60165d40bd9194003d5829d3"
+        },
+        {
+          "symbols": [
+            "photometric_kernel_for_normals_jax"
+          ],
+          "original_line": 334,
+          "ast_sha256": "720d1c21bd03d552a6280c92a1a79f9bba62476d266255d5bc0bf7fe47ee13aa"
+        },
+        {
+          "symbols": [
+            "predict_gaussian_measure_lightcurves_jax"
+          ],
+          "original_line": 462,
+          "ast_sha256": "7d0103e618a171c433e32c7fdd0ce308f66bd2cb056a330004260f6878c4de4e"
+        },
+        {
+          "symbols": [
+            "predict_selected_gaussian_bhs_table_jax"
+          ],
+          "original_line": 520,
+          "ast_sha256": "7c1c59e2bc18a1bb8095d501a4f43d2cd0db82f280cf4a706b7de511c623f1cb"
+        },
+        {
+          "symbols": [
+            "predict_selected_gaussian_measure_table_jax"
+          ],
+          "original_line": 539,
+          "ast_sha256": "fe1dca3f7ab789fd06f53b2ff9443b4e16c90e33caf41ab7c90ed595df094008"
+        },
+        {
+          "symbols": [
+            "surface_bhs_coordinates_jax"
+          ],
+          "original_line": 606,
+          "ast_sha256": "a6315cb3c860094ae68596e17ba511dd16a923ad737b261a67acc38f82a9e960"
+        },
+        {
+          "symbols": [
+            "surface_bhs_energy_jax"
+          ],
+          "original_line": 619,
+          "ast_sha256": "a8615d90731faf24e5d12e43848b5ae47dad90e2ba061ae7de506461f3edb248"
+        },
+        {
+          "symbols": [
+            "surface_wasserstein_cost_matrix"
+          ],
+          "original_line": 631,
+          "ast_sha256": "5434386b4592c0d601667b9159ec07c6814fce98cb0884b1e38a5e9f4526e806"
+        },
+        {
+          "symbols": [
+            "surface_wasserstein2_energy_jax"
+          ],
+          "original_line": 643,
+          "ast_sha256": "c1be65218cac325dcec8bb454d3da9e5f6e99eafa990869c8bff453ce2207969"
+        },
+        {
+          "symbols": [
+            "surface_reference_moment_energy_jax"
+          ],
+          "original_line": 676,
+          "ast_sha256": "edf54feee7e84f70c69d39c2bf05a07f95d2a8a8d5eb0e8cad2a30f50f9c8e95"
+        },
+        {
+          "symbols": [
+            "spectral_sobolev_energy_jax"
+          ],
+          "original_line": 698,
+          "ast_sha256": "fe0d68e8a03718cecc4cc49879ec8f2fe9df5b70b20f341e422399c90bf4bdbe"
+        },
+        {
+          "symbols": [
+            "lightcurve_bhs_loss_jax"
+          ],
+          "original_line": 712,
+          "ast_sha256": "9372198768b3b26b26dd544f9d7354ead5e9a776fb8b1131f05753f3e80551fa"
+        },
+        {
+          "symbols": [
+            "gaussian_bhs_objective_terms_jax"
+          ],
+          "original_line": 727,
+          "ast_sha256": "e26b6549bbb323082eb528090f426bca4ed8407b435453c553df4f3e400c1c57"
+        },
+        {
+          "symbols": [
+            "make_gaussian_bhs_objective"
+          ],
+          "original_line": 786,
+          "ast_sha256": "4138d27ab05e215a5625609144a80396377f3d4d17a3236adb1301df85500b65"
+        },
+        {
+          "symbols": [
+            "evaluate_gaussian_bhs_parameters"
+          ],
+          "original_line": 804,
+          "ast_sha256": "66e54a2644703bad9ebd996b7ad9f8a75781f9cb03c7acc6843d4748ecf50b15"
+        },
+        {
+          "symbols": [
+            "_relative_clr"
+          ],
+          "original_line": 867,
+          "ast_sha256": "6c65b25f164439f7a69e909c660e81171741aa5af0a252ba3a68d2a3e7d8d592"
+        },
+        {
+          "symbols": [
+            "_normalize"
+          ],
+          "original_line": 874,
+          "ast_sha256": "b41fcaeb1b59383caaca4c77c4dc5f2550b289dfe96d42ff9322b11af2542bc6"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/geometry.py",
+      "original_path": "src/hac_forward/geometry.py",
+      "original_sha256": "4683ec41402cc99b6715a9aacab8fc75c82c6c6a4082f751a6b1a618490328f5",
+      "extracted_sha256": "49e4c875467a6dae9580b39ba4b537c97f7323ed8909cc13e66d8225eb101f2d",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "unit_vector"
+          ],
+          "original_line": 10,
+          "ast_sha256": "0125708471dfa3a3480292620c9931b84ca87a5cd901baaa257afecf1a347f43"
+        },
+        {
+          "symbols": [
+            "horizontal_direction"
+          ],
+          "original_line": 17,
+          "ast_sha256": "9d6df8ea877c8701094112fed1569869d5d35858be4fb73a779ccab5f43bd948"
+        },
+        {
+          "symbols": [
+            "tilted_direction"
+          ],
+          "original_line": 28,
+          "ast_sha256": "1c1d41e57dd8e76828f8172d83eb168ff47a5dbe649d2be8dbfd34ee368b6c75"
+        },
+        {
+          "symbols": [
+            "view_directions"
+          ],
+          "original_line": 61,
+          "ast_sha256": "9d840e1ebb378cd80698d16664116b77aa7a1d5534fb367dc0afd5d70b96233f"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/inversion.py",
+      "original_path": "src/hac_forward/inversion.py",
+      "original_sha256": "eec91991f6dfd4177af67d12df0feaf8f53eb264dbb3d0f55f73fd47e01398e7",
+      "extracted_sha256": "6aaa0c1368d9dadc88fd3e9d4f568c277799dd56ab9c426509f8d3fffbee0f63",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "PredictionCalibration"
+          ],
+          "original_line": 56,
+          "ast_sha256": "e6d9b36104b06572b724515744312e4358fab233e0b51dff6649aae75c36d7a6"
+        },
+        {
+          "symbols": [
+            "InversionTarget"
+          ],
+          "original_line": 64,
+          "ast_sha256": "fb0da751de2bd37801d641003e606bc92afdd3ceaa928ab15254e0b280758ccc"
+        },
+        {
+          "symbols": [
+            "AdamResult"
+          ],
+          "original_line": 129,
+          "ast_sha256": "01ec90e5b8aecfa25f37da40b7aa5c0590da94532b2438c0b56e2722ae9983ca"
+        },
+        {
+          "symbols": [
+            "prepare_inversion_target"
+          ],
+          "original_line": 140,
+          "ast_sha256": "158d912e2fae0031d878ee3be4393eb375458c3982ec6254bcb18068a2c33a2a"
+        },
+        {
+          "symbols": [
+            "weighted_curve_misfit_jax"
+          ],
+          "original_line": 216,
+          "ast_sha256": "a2da0d430c6671b5673a912972d9f29c4600acd2933960895257e5aa850fabd0"
+        },
+        {
+          "symbols": [
+            "apply_prediction_calibration_jax"
+          ],
+          "original_line": 1016,
+          "ast_sha256": "cf0f7f10c49e7fce98ae83a8a4f9781ca8379ec85b7f14d14ce514351ea84024"
+        },
+        {
+          "symbols": [
+            "run_adam"
+          ],
+          "original_line": 1037,
+          "ast_sha256": "37ab647472ec8633340a96b5f9e7cae20a534c9db1c2fdb0ea5d89d20e4a64e6"
+        },
+        {
+          "symbols": [
+            "run_multistart_adam"
+          ],
+          "original_line": 1111,
+          "ast_sha256": "1e3e705600703a4c5fe9d868e663c0c294aca50e9655b3c3eb16cbad070686e9"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/io_utils.py",
+      "original_path": "src/hac_forward/io_utils.py",
+      "original_sha256": "83d4e9290745f152b7ebf17ed83ca7fc8ccfed678d6950a97c5b53d12b4183b6",
+      "extracted_sha256": "6ab8b3ea8fa608234d1386d8574016cdca2a87b5e4898fa09c4f4cffa73f148e",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "read_json"
+          ],
+          "original_line": 20,
+          "ast_sha256": "1694f982c4cd92dc05e2b68d768bbbfc45ad7d44624df45b820c51db753e6767"
+        },
+        {
+          "symbols": [
+            "write_json"
+          ],
+          "original_line": 25,
+          "ast_sha256": "28241677d13f21d4e3035496bf03f2cb9ae9e54dfad27317763fc3556ad9bac6"
+        },
+        {
+          "symbols": [
+            "write_csv_rows"
+          ],
+          "original_line": 48,
+          "ast_sha256": "c7b21c0c6a08b5f94aed5e5afea81709158b4f228e70244a6e8436ccc7557100"
+        },
+        {
+          "symbols": [
+            "row_fieldnames"
+          ],
+          "original_line": 94,
+          "ast_sha256": "e395f0f1e0ed4b0f9e69b55446511e853d509f72a8f2dfe46c4486d86b377abc"
+        },
+        {
+          "symbols": [
+            "file_provenance"
+          ],
+          "original_line": 112,
+          "ast_sha256": "da66849c918a929d1c163b52f82ee08ac3ea3296e1c557d64686dd440c59c3d2"
+        },
+        {
+          "symbols": [
+            "_sha256_and_size"
+          ],
+          "original_line": 129,
+          "ast_sha256": "35dab583b7e3545675420423ca576cddfe75ae9bd190de87d17ab47648898742"
+        },
+        {
+          "symbols": [
+            "_atomic_write_text"
+          ],
+          "original_line": 143,
+          "ast_sha256": "eed91033df84087608b7ca3608ae204a2944525e27d4278c223ea0d18d05bc03"
+        },
+        {
+          "symbols": [
+            "_match_output_permissions"
+          ],
+          "original_line": 166,
+          "ast_sha256": "f5d483a7b79ad035d57773b9306a0f3565c3af9215a6b4d03fe8c6bc11264a34"
+        },
+        {
+          "symbols": [
+            "_validate_csv_rows"
+          ],
+          "original_line": 171,
+          "ast_sha256": "80da584830fd838c335d50d1e82663c46d21acd488900fe25c96b354869f9720"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/jax_model.py",
+      "original_path": "src/hac_forward/jax_model.py",
+      "original_sha256": "d7a67cbc59a1ff70b7a7725ef7f6386585b034e8016bdad501c33602cee00dd4",
+      "extracted_sha256": "b8793c72386371b05ad58edc1142177f69239676b463df0ab1fbf60866422af5",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "rotate_lab_direction_to_body"
+          ],
+          "original_line": 302,
+          "ast_sha256": "fe8a9029a6414d65ad95326c19880f550ce3877b698c7b47fc467f0bb73d86cf"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/lightcurves.py",
+      "original_path": "src/hac_forward/lightcurves.py",
+      "original_sha256": "619b6a2652619326645b4bf11f60b3d17af0ee84d9624d1596357cc5d5d084a5",
+      "extracted_sha256": "2c3ae17554d81fa93b1f089cbe403b2d148ede37a00ecc9a951db95956aca8c7",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "CURVE_SHAPE"
+          ],
+          "original_line": 16,
+          "ast_sha256": "80ef09b801b68e631c83c30a1fb4e0bf8731b769756428367e8ff20398f5adf9"
+        },
+        {
+          "symbols": [
+            "NORMALIZATION_ATOL"
+          ],
+          "original_line": 17,
+          "ast_sha256": "59b13c2628bdd14951bb63073b867bea3820c97c4ea1ba1348a8656217a874fd"
+        },
+        {
+          "symbols": [
+            "PROJECTION_LABORATORY"
+          ],
+          "original_line": 19,
+          "ast_sha256": "1c60eb30fcd4b76f96d9e9d85f67976c07c58463d6c525964f9e3c42433775d7"
+        },
+        {
+          "symbols": [
+            "PROJECTION_LEGACY_PERSPECTIVE"
+          ],
+          "original_line": 20,
+          "ast_sha256": "f9707c3919007ae42a333ae08944f626ec89e0f1d84c359673d6a77a81c1ab8a"
+        },
+        {
+          "symbols": [
+            "PROJECTION_ORTHOGRAPHIC"
+          ],
+          "original_line": 21,
+          "ast_sha256": "77d69a7127a9e8bc1f43d3fa04a7f5bc13ab912322d4ec1b277b0ce9bc0d4d40"
+        },
+        {
+          "symbols": [
+            "PROJECTION_UNVERIFIED"
+          ],
+          "original_line": 22,
+          "ast_sha256": "8d7aabdf89aeffd482d640c13031f760be05bb8e8bc781c980b00e6dd5c0c60f"
+        },
+        {
+          "symbols": [
+            "MODEL1_BLENDER_PROJECTION_BY_SHA256"
+          ],
+          "original_line": 29,
+          "ast_sha256": "439493f7e20ed7e767d5cbbc5761da6211e8fef8d37fd2aad61753852c7a9c3f"
+        },
+        {
+          "symbols": [
+            "LightcurveTable"
+          ],
+          "original_line": 43,
+          "ast_sha256": "711584841c09c99d8a0bd434f207d885ecfb79830cb7f82dea0bc8045594b0a9"
+        },
+        {
+          "symbols": [
+            "load_lightcurve"
+          ],
+          "original_line": 160,
+          "ast_sha256": "a7384cb34f15ac7cbb9e5e0d00b5cc84a3952c6fdc9337dc556ad1b64c4ca486"
+        },
+        {
+          "symbols": [
+            "released_curve_metadata"
+          ],
+          "original_line": 209,
+          "ast_sha256": "51f0bec0e5a1f49f78b603a13d86a312a3ab40ad9001dddb58a69ad26dca9dad"
+        },
+        {
+          "symbols": [
+            "resample_periodic_table"
+          ],
+          "original_line": 331,
+          "ast_sha256": "e4ba9fdb7c189634414e7223e7e2221ea01de5e759f64f49df1929c8d20e4806"
+        },
+        {
+          "symbols": [
+            "_validate_lightcurve_matrix"
+          ],
+          "original_line": 363,
+          "ast_sha256": "284a5a3a5a0285d04149e393780f733f4bafe5af4cfa1e6ba9b9912be9f935ac"
+        },
+        {
+          "symbols": [
+            "_validate_curve_table_values"
+          ],
+          "original_line": 388,
+          "ast_sha256": "35a546e698af3cd3e35f14691f30a2bba0aefc0db9109cc50af0908420abfa88"
+        },
+        {
+          "symbols": [
+            "_validate_released_curve_relationships"
+          ],
+          "original_line": 403,
+          "ast_sha256": "bcc3707aa9a94ff04ede56594d45d5e63a5cfe17c88aff45ababdd7dd93c9701"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/mesh_priors.py",
+      "original_path": "src/hac_forward/mesh_priors.py",
+      "original_sha256": "18bc94255787756dbbd03f42728713e0f01a7611042df1898ae3665449e6bc68",
+      "extracted_sha256": "462134d85eb33952b3a128cf05971e7cfa5f72471d6a47344d0453b3f5e60e0e",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "released_cylinder_radius"
+          ],
+          "original_line": 13,
+          "ast_sha256": "fed98a0208042133fce4ce88565745797a6a05a70e25f79c853bafed7a4d54ee"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/metrics.py",
+      "original_path": "src/hac_forward/metrics.py",
+      "original_sha256": "21aff5950d4a6b52c8cfcad92e50d28820f161e36640b00f7df914c5f2cbf447",
+      "extracted_sha256": "676dd1029d1f8414a64e4186aa948a46afb1342020789e0924e3405bcff5fa9e",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "correlation"
+          ],
+          "original_line": 72,
+          "ast_sha256": "ac7c352b4a1cc98d95b45294437e657affc3b3fc8bc9febf6f9fd951469da820"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/paths.py",
+      "original_path": "src/hac_forward/paths.py",
+      "original_sha256": "43f30b2bd3df57b57d9718f669e8a69fed9f062c5e1f467cd475fa4f40f41f8b",
+      "extracted_sha256": "68ece66f4692772611fe223e8d64dfe2859c7eb8dea09442a5b59bb4a824a0ce",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "require_released_model_id"
+          ],
+          "original_line": 10,
+          "ast_sha256": "680238105056349c4cd701b7310220e5b894b5563af81973f3e1278b05c33ca3"
+        },
+        {
+          "symbols": [
+            "model_root"
+          ],
+          "original_line": 20,
+          "ast_sha256": "fabc5ddeffda78ddd40a39b698961e6be9572a1ac4d07303c37164909118b9d8"
+        },
+        {
+          "symbols": [
+            "lightcurve_path"
+          ],
+          "original_line": 27,
+          "ast_sha256": "d3c9415b272fc18b2d3a67c029d9ca1b32836dbc549059fb9c14e5e21ea3eaad"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/semidiscrete_ot_quantization.py",
+      "original_path": "src/hac_forward/semidiscrete_ot_quantization.py",
+      "original_sha256": "ae18d67d0a64de2e10648a75eb7ab803a4529a46dd67b944e3559fce318cc946",
+      "extracted_sha256": "96517f8f23da835613fe05f86235d25ed39df44cddab1c8741e38c91a36d6a0a",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "SemidiscreteOTQuantizerConfig"
+          ],
+          "original_line": 54,
+          "ast_sha256": "0b9f721179cbde67838260ec2562683821e36fdba3f4cbeb81e275960513249d"
+        },
+        {
+          "symbols": [
+            "SemidiscreteOTIterationDiagnostics"
+          ],
+          "original_line": 114,
+          "ast_sha256": "83f5cb21ee503b911bca94f38d843dbfcae89934182b2809cd6d8a29a7d8f68a"
+        },
+        {
+          "symbols": [
+            "SemidiscreteOTStartDiagnostics"
+          ],
+          "original_line": 126,
+          "ast_sha256": "b07094a61487eba87c40090446fbf7acb00c6c6e060a36bce0cec04196de5db4"
+        },
+        {
+          "symbols": [
+            "MassFloorMergeDiagnostics"
+          ],
+          "original_line": 147,
+          "ast_sha256": "a7cf748aeaa310969609913c67fc8bd50176b5ea7e1f561e1aef8f38358eb610"
+        },
+        {
+          "symbols": [
+            "SemidiscreteOTQuantizationDiagnostics"
+          ],
+          "original_line": 168,
+          "ast_sha256": "fe0fdee39263a87139568139c6f628047c30676eef823d50381a190093024fe8"
+        },
+        {
+          "symbols": [
+            "SemidiscreteOTQuantization"
+          ],
+          "original_line": 241,
+          "ast_sha256": "b34125597635abb118d90fb5d2971ad8e0b976fd881db290cd53faf57b6ddf19"
+        },
+        {
+          "symbols": [
+            "RectangularWassersteinResult"
+          ],
+          "original_line": 252,
+          "ast_sha256": "17b8f67c396e5f02e2bed2a04ab7b91553b0cb63aec97e8767493f32e189b962"
+        },
+        {
+          "symbols": [
+            "_LloydTrial"
+          ],
+          "original_line": 263,
+          "ast_sha256": "77b9725b88849830d81c7ac616908972345d7e4e9f9be5a929944813b0790c6b"
+        },
+        {
+          "symbols": [
+            "_ReductionCluster"
+          ],
+          "original_line": 274,
+          "ast_sha256": "2d07bc55cb0a55a000f9ec4f7b384fe9378a546e0db945a3b12abbb42c168fbf"
+        },
+        {
+          "symbols": [
+            "_MassFloorReduction"
+          ],
+          "original_line": 281,
+          "ast_sha256": "b2d219f9bb106163b81d9c9fce1d769a5c95709a36b5a89be38987b656f0e897"
+        },
+        {
+          "symbols": [
+            "semidiscrete_ot_quantize"
+          ],
+          "original_line": 290,
+          "ast_sha256": "a3161cba816a6aa5a3ecda5fc544d48d18ebfad9050269bea019b059f743040f"
+        },
+        {
+          "symbols": [
+            "_run_lloyd"
+          ],
+          "original_line": 458,
+          "ast_sha256": "c7bc70dae3f87233e748f5ef084eba390d891638f46ac911420c68313919fc2c"
+        },
+        {
+          "symbols": [
+            "_reduce_selected_partition_to_mass_floor"
+          ],
+          "original_line": 555,
+          "ast_sha256": "96ac176563b3287427ad94d81c683023da2f976dc884f3cf2ea17b3bf21141f0"
+        },
+        {
+          "symbols": [
+            "_canonical_reduction_clusters"
+          ],
+          "original_line": 726,
+          "ast_sha256": "ea8d0ba1f084c34accbc377cfcc0e945f93bf17950cf0f4c41582aff50acad0a"
+        },
+        {
+          "symbols": [
+            "_reduction_cluster_state"
+          ],
+          "original_line": 745,
+          "ast_sha256": "9eb14862570012cf5553acc54331631162d86283d1afae7dc96e41ebd12524b7"
+        },
+        {
+          "symbols": [
+            "_stable_vector_norm"
+          ],
+          "original_line": 758,
+          "ast_sha256": "e15af2969c3b7b5237386cac6da8c3fa48f6cf3fed275b5ac7c58fde964addf8"
+        },
+        {
+          "symbols": [
+            "_resultant_merge_loss"
+          ],
+          "original_line": 762,
+          "ast_sha256": "d8de131b33c9ac403e7b0a7a602c41f22882611ea3c15eabfcc6ac91e2fc99a3"
+        },
+        {
+          "symbols": [
+            "_mass_floor_validation_tolerance"
+          ],
+          "original_line": 784,
+          "ast_sha256": "50b8532b8c0fc05ec8371c2f987f48550a87d4c2a3cccef919b3f21a7c70baa1"
+        },
+        {
+          "symbols": [
+            "_build_output"
+          ],
+          "original_line": 788,
+          "ast_sha256": "34907b6cd9404ad4cd3fbabc5863ca283f65ace4e644534378c25f6b0ac14205"
+        },
+        {
+          "symbols": [
+            "_score_closed_trial"
+          ],
+          "original_line": 1031,
+          "ast_sha256": "77bea69f2932027f872c5eb488e71606d4ad9f3568a052cfee15125cd92e3822"
+        },
+        {
+          "symbols": [
+            "_closed_wasserstein2"
+          ],
+          "original_line": 1088,
+          "ast_sha256": "f6ae476e6d2ebb2c0661a518c37bcf9d3390c9c24047e14b0b5366da2dfbb520"
+        },
+        {
+          "symbols": [
+            "_trial_secondary_selection_key"
+          ],
+          "original_line": 1094,
+          "ast_sha256": "6faae240f23176d2eed82680fa39370532604892834b235eeae7c5fab325eda5"
+        },
+        {
+          "symbols": [
+            "_assign_nonempty"
+          ],
+          "original_line": 1109,
+          "ast_sha256": "968b14dc4073bcaaead9e06f83558261bbef370a12fc6d588eba866a0ba1586d"
+        },
+        {
+          "symbols": [
+            "_cluster_resultants"
+          ],
+          "original_line": 1135,
+          "ast_sha256": "97348c89bf16c97bf53b8c0c6482ab316c4202c538cbfdcb5e260f00ebf432c1"
+        },
+        {
+          "symbols": [
+            "_assigned_energy"
+          ],
+          "original_line": 1146,
+          "ast_sha256": "1597ad3a29e2cbe26b6ce3d992fdc05c14657b24226c011810f55e39844afea6"
+        },
+        {
+          "symbols": [
+            "_nearest_site_energy"
+          ],
+          "original_line": 1156,
+          "ast_sha256": "8b689ba43e26e2fd6cdb5e369b058027d4a9f8c25047c1b9198f4ad08d655a8f"
+        },
+        {
+          "symbols": [
+            "_weighted_farthest_sequence"
+          ],
+          "original_line": 1165,
+          "ast_sha256": "67fc75d23aacb392d864b829bb15ecb9f1ec5fb874a5359b818bf1278d5a4bc1"
+        },
+        {
+          "symbols": [
+            "_seeded_weighted_anchor"
+          ],
+          "original_line": 1180,
+          "ast_sha256": "ed0ead6ea425c21ced8222207a57ea10b354527703af03357a8eb7c9880efaa8"
+        },
+        {
+          "symbols": [
+            "_weighted_farthest_seeds"
+          ],
+          "original_line": 1189,
+          "ast_sha256": "76814fcb580ec829754994a232c8bd153980e1a00ea731519d66112f5594fa67"
+        },
+        {
+          "symbols": [
+            "_unique_direction_data"
+          ],
+          "original_line": 1213,
+          "ast_sha256": "b8def489b70bac11efbce201f171a28f18fcb72660e5e89e81088171818d7186"
+        },
+        {
+          "symbols": [
+            "_validate_measure"
+          ],
+          "original_line": 1226,
+          "ast_sha256": "d53e83c6acd2ba7f3f4e366fa9b5f8212d3c421fd8fd8bfa6b9a2a6bfd6fc5e5"
+        },
+        {
+          "symbols": [
+            "_row_norms"
+          ],
+          "original_line": 1253,
+          "ast_sha256": "9828a8b4cf12e3f32c90d1b917a0521259c8efaa059e8b832d034d794b4ea2ea"
+        },
+        {
+          "symbols": [
+            "exact_rectangular_wasserstein2"
+          ],
+          "original_line": 1260,
+          "ast_sha256": "95f2cbdf4c1a36e496de9ad7a71f2e9e8d09993ce87b84ccd39b479cc737d578"
+        },
+        {
+          "symbols": [
+            "_validated_transport_measure"
+          ],
+          "original_line": 1336,
+          "ast_sha256": "b8d8ad598ea4e1f58754335b936d8e1e401d896660d379878d84ffa25eb5e91e"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/spherical_wasserstein.py",
+      "original_path": "src/hac_forward/spherical_wasserstein.py",
+      "original_sha256": "6d31a78b4895c69ca555cedd697698fe85192b11e3f7d290a99a32a6e1e8360f",
+      "extracted_sha256": "05998d606551931e39e5e0cfb723837b17649e7e9ee5068fe6f5c44298c581c8",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "CHORDAL_GROUND_COST"
+          ],
+          "original_line": 28,
+          "ast_sha256": "a3665423e50605483ec27afff95c4776812b759db2d016db8af7342aa7f5a6a6"
+        },
+        {
+          "symbols": [
+            "GEODESIC_GROUND_COST"
+          ],
+          "original_line": 29,
+          "ast_sha256": "29b869e0fc22144b0aba858baf99e3b9c3cdb7ca0f900bcb31281eaf5fd1e365"
+        },
+        {
+          "symbols": [
+            "WASSERSTEIN_GROUND_COSTS"
+          ],
+          "original_line": 30,
+          "ast_sha256": "f51ddfb6737f9603ae3daac49eb82f330242b95f6cd6347d2e013b8919badb8e"
+        },
+        {
+          "symbols": [
+            "squared_geodesic_cost_matrix"
+          ],
+          "original_line": 43,
+          "ast_sha256": "87aa1fa5229f00ee28281f16348fca986d1e64e997d0e19090e2db9771e51193"
+        },
+        {
+          "symbols": [
+            "squared_chordal_cost_matrix"
+          ],
+          "original_line": 62,
+          "ast_sha256": "a87a14dc3620b0ba8e4506ff0f7e7b64e52185de490e122377870d8c982d5d91"
+        },
+        {
+          "symbols": [
+            "squared_ground_cost_matrix"
+          ],
+          "original_line": 72,
+          "ast_sha256": "493b9ec8be3098082ef969a5ff72cce368e1a6e833d5ed0cf42d4b85b5b5a0e8"
+        },
+        {
+          "symbols": [
+            "sinkhorn_divergence_jax"
+          ],
+          "original_line": 120,
+          "ast_sha256": "ed409777b17687a96d590a53d066a708beba52f5ca95415fe0d4a8000bd891a2"
+        },
+        {
+          "symbols": [
+            "sinkhorn_marginal_error_jax"
+          ],
+          "original_line": 287,
+          "ast_sha256": "14e74c026c7d3a7638b2ad68adbcae85f89bdfc97596c1513f08c1edb3e3163d"
+        },
+        {
+          "symbols": [
+            "sinkhorn_divergence_marginal_error_jax"
+          ],
+          "original_line": 313,
+          "ast_sha256": "51492ec0fd3df821fc987fb1dd901409a41282e66216d10c6b0b5ba894e5a5ff"
+        },
+        {
+          "symbols": [
+            "_entropic_transport_cost_jax"
+          ],
+          "original_line": 390,
+          "ast_sha256": "a47a9ffc1776fe8e553b2fd6d84374cec8af032903ffb633d063e0f20b5f01b9"
+        },
+        {
+          "symbols": [
+            "_sinkhorn_scalings_jax"
+          ],
+          "original_line": 416,
+          "ast_sha256": "4c27f1359188530c2e584c4f4331c5f89eff890080b6b1643fd74a4db320e6dc"
+        },
+        {
+          "symbols": [
+            "_validated_jax_inputs"
+          ],
+          "original_line": 453,
+          "ast_sha256": "bd6b779ebf7ffeb9587002843f665f51a0caeb26dd6d012cee901a3b33039ade"
+        },
+        {
+          "symbols": [
+            "_validate_sinkhorn_controls"
+          ],
+          "original_line": 517,
+          "ast_sha256": "0ccfc9ecfb7e46046bfbbae336c4b84dcddb314cdb794a7ee7f3c07eab213588"
+        },
+        {
+          "symbols": [
+            "_validated_unit_normals"
+          ],
+          "original_line": 525,
+          "ast_sha256": "a7ae1d92b27a066098480e98814810d4f1724a5b2b440a7c732ab766d6fb2ef7"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/stl.py",
+      "original_path": "src/hac_forward/stl.py",
+      "original_sha256": "24c74b1a11154861370a150304f301e71d9f2d63d36ecba0d010551a16b6b56f",
+      "extracted_sha256": "37306d354e573d8a020a3471509dcd0cab659e6b667d1803b8e585d62ac79375",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "MeshArrays"
+          ],
+          "original_line": 18,
+          "ast_sha256": "b31e517eee9bc7eb8ced69ce8494c90b4255f96ba1903bbcb88592a68b3870f0"
+        },
+        {
+          "symbols": [
+            "load_stl_triangles"
+          ],
+          "original_line": 38,
+          "ast_sha256": "0d35cd16477617d66e7ee7bae34b6ca3ef17d556000a87cee7c0e18465ba21a4"
+        },
+        {
+          "symbols": [
+            "mesh_from_triangles"
+          ],
+          "original_line": 116,
+          "ast_sha256": "885bc3c5e6120a28f69fe1904f7ac290f14b9c6b95efd1a074d5fa98af7b2a94"
+        },
+        {
+          "symbols": [
+            "validate_triangle_array"
+          ],
+          "original_line": 151,
+          "ast_sha256": "80b0a315ad31042fc1b787872478671d544b7de3a737a52e377a3c8e41ce7808"
+        },
+        {
+          "symbols": [
+            "write_ascii_stl"
+          ],
+          "original_line": 193,
+          "ast_sha256": "013b3241bdcb18354c84b65606a1e417d967df00a8938a3c179c94aaa4617074"
+        },
+        {
+          "symbols": [
+            "_looks_like_binary_stl"
+          ],
+          "original_line": 260,
+          "ast_sha256": "5b910881711b1cbd62b5975535c4c812563fcc476580b05b0643a8c05d9b630f"
+        },
+        {
+          "symbols": [
+            "_load_binary_stl"
+          ],
+          "original_line": 270,
+          "ast_sha256": "a0c2fd0c40ac6333b05b58c5299ce832f8be6fcca237873555cee18bab80c9dc"
+        },
+        {
+          "symbols": [
+            "_load_ascii_stl"
+          ],
+          "original_line": 280,
+          "ast_sha256": "5420ae85b51303f35e976580b8d6126b0978bd83ea15d06bc7a215122924be77"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/submission_validation.py",
+      "original_path": "src/hac_forward/submission_validation.py",
+      "original_sha256": "b91c2e4c211c6aa04662207a7c1dbec9a072898a824c0dcb937fe5a727417a1d",
+      "extracted_sha256": "207efd2ccfffe9662901ce04ceb00c9810ff6494927e11b9174b2c1e74e15797",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "SubmissionMeshValidation"
+          ],
+          "original_line": 15,
+          "ast_sha256": "7f481bca2035a79d044df073ae839c9cc3ae1ffe159793cf531ccf677fbaec6f"
+        },
+        {
+          "symbols": [
+            "normalize_submission_frame"
+          ],
+          "original_line": 43,
+          "ast_sha256": "316a0dd99d76234b1447239ebe7260722c5c83b24a538e3cceeb824af197b7dd"
+        },
+        {
+          "symbols": [
+            "validate_submission_stl"
+          ],
+          "original_line": 109,
+          "ast_sha256": "c3be14bcd1ba9f1a7a165b8e1aba707c9ac1a341c46c269f3fb65ca0336b9d90"
+        },
+        {
+          "symbols": [
+            "validate_submission_mesh"
+          ],
+          "original_line": 131,
+          "ast_sha256": "5b812629b071fde66719b45084b698e7b1782e14b2a87be384ff6b84ca9abc4f"
+        },
+        {
+          "symbols": [
+            "_face_component_count"
+          ],
+          "original_line": 324,
+          "ast_sha256": "c0657ccd899937cf7272a9cedd72153853e8b3b56b31c245895e2bac51ffb7a2"
+        },
+        {
+          "symbols": [
+            "_nonnegative_finite"
+          ],
+          "original_line": 351,
+          "ast_sha256": "cfe6341bdc43d839bb82d35dc5aa63f5de25b3ec3e6f3ff00ec64a6387b094ce"
+        },
+        {
+          "symbols": [
+            "_positive_finite"
+          ],
+          "original_line": 358,
+          "ast_sha256": "610cbf9f331166f918c713dfe0b1e8b0f6a9fee1df8bf0a1bf467e8cf9b23d42"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/surface_measure_artifact.py",
+      "original_path": "src/hac_forward/surface_measure_artifact.py",
+      "original_sha256": "de9d1252b3b3afa373fa5972603eabd93f4aa3b55a1373b6975583766d9493fd",
+      "extracted_sha256": "fa4dc5b717717b94bbcec1b302e12e622611a70003bbd596ee3a77a4c589b626",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "SCHEMA_NAME"
+          ],
+          "original_line": 29,
+          "ast_sha256": "b16b4e19fa8f0afb5afcf76b99cae08447a763747c3f06e3ca036599c8034c0d"
+        },
+        {
+          "symbols": [
+            "SCHEMA_VERSION"
+          ],
+          "original_line": 30,
+          "ast_sha256": "ace374d28afa1b8b232f76dfd58e69a94a8bf56293cff293f581b9029391fac4"
+        },
+        {
+          "symbols": [
+            "NPZ_FILENAME"
+          ],
+          "original_line": 31,
+          "ast_sha256": "1b2ea5fcd2f4bf3a5b0002cbfa4ef160e456e1c3aa96af881dc25554af3e4fb2"
+        },
+        {
+          "symbols": [
+            "METADATA_FILENAME"
+          ],
+          "original_line": 32,
+          "ast_sha256": "e7476c5aa6ed684becdfb99657f899e11b4e71d6fea5993ad11ee3d3491c0426"
+        },
+        {
+          "symbols": [
+            "MASS_ATOL"
+          ],
+          "original_line": 33,
+          "ast_sha256": "f5ad89edb967cb390bdf4263aeef185f3db10af418e616093f8097f2065dddce"
+        },
+        {
+          "symbols": [
+            "NORMAL_ATOL"
+          ],
+          "original_line": 34,
+          "ast_sha256": "e4b7a1d45fa190f83f59314bca41d8228cb2429e2c8c3eb123d2e6d7dcf951cd"
+        },
+        {
+          "symbols": [
+            "CLOSURE_ATOL"
+          ],
+          "original_line": 35,
+          "ast_sha256": "902c121f7b085b829cf9f8deae40dbd4eade1150714c7d26b14d964627a3fe71"
+        },
+        {
+          "symbols": [
+            "_REPRESENTATION_PATTERN"
+          ],
+          "original_line": 37,
+          "ast_sha256": "f80efbe6ca97254e89592f5b0264fda20f3f5da98af51ac194bf80433ed736bd"
+        },
+        {
+          "symbols": [
+            "_HARMONIC_COMPONENTS"
+          ],
+          "original_line": 38,
+          "ast_sha256": "3d5cc0f7290b1ecce567067212376af62479d2f74a165a7bcf3f0fc7d4188d5c"
+        },
+        {
+          "symbols": [
+            "_ARRAY_DTYPES"
+          ],
+          "original_line": 39,
+          "ast_sha256": "09aab8bb6c73103a9d2b946ac28eb0802bd6884bf4009fd409e453bd7fd5483c"
+        },
+        {
+          "symbols": [
+            "_HARMONIC_BASIS_CONVENTION"
+          ],
+          "original_line": 52,
+          "ast_sha256": "63bdd690726d2cb871ae82f04a5dcfb5bcfd8508ccb86111405ba6dcbd580f56"
+        },
+        {
+          "symbols": [
+            "SurfaceMeasureArtifact"
+          ],
+          "original_line": 62,
+          "ast_sha256": "fc52504953562d148b4430ac35c60ddacfacc310ba6d9cfcbb501d2a613d27d4"
+        },
+        {
+          "symbols": [
+            "validate_surface_measure_artifact"
+          ],
+          "original_line": 91,
+          "ast_sha256": "dff97e571663bad0099f9022c4edf0eca401e4150efa5dfa4a37f109ca9dc4f6"
+        },
+        {
+          "symbols": [
+            "write_surface_measure_artifact"
+          ],
+          "original_line": 208,
+          "ast_sha256": "5fcc3adce99aed7f074fa23d8ba74882873240bf4054497950a90e4cdc53031e"
+        },
+        {
+          "symbols": [
+            "load_surface_measure_artifact"
+          ],
+          "original_line": 250,
+          "ast_sha256": "269d7542fbad8cc6b1bce0ae0795abbcdebaa617b732f3469f810e481e4cf3fd"
+        },
+        {
+          "symbols": [
+            "_artifact_arrays"
+          ],
+          "original_line": 337,
+          "ast_sha256": "1089ae224f2a74ae03d88376503c3f51b636f28e72b7d73b940a3cb5096cc369"
+        },
+        {
+          "symbols": [
+            "_metadata_payload"
+          ],
+          "original_line": 359,
+          "ast_sha256": "d21bc253e65da09228e17ddfd387dad1d1efe0865565b6f33bef8486762587b0"
+        },
+        {
+          "symbols": [
+            "_measure_metadata"
+          ],
+          "original_line": 386,
+          "ast_sha256": "51a47a3b18f3b79f9535d4623db6a575aa0109c37f55a3f4b154eca47af5ad0e"
+        },
+        {
+          "symbols": [
+            "_harmonic_basis_metadata"
+          ],
+          "original_line": 400,
+          "ast_sha256": "e1542ed1e6626016dbe011db3cff46e441d75efbada5c81b5c53e8d08f1bea50"
+        },
+        {
+          "symbols": [
+            "_float_vector"
+          ],
+          "original_line": 417,
+          "ast_sha256": "b420c12b03ad09275fcf5eff98eaa25e3fedb9513eab76f2db1a12e8693300b6"
+        },
+        {
+          "symbols": [
+            "_integer_vector"
+          ],
+          "original_line": 426,
+          "ast_sha256": "98ccbe575b465e6fab4ee3b98178fe2a38a9f5775f378b89a2d462419a937439"
+        },
+        {
+          "symbols": [
+            "_json_default"
+          ],
+          "original_line": 435,
+          "ast_sha256": "fde7d50d614cd0af707ee67a11731b4b7e27e250b40215f6417aa35122d17c37"
+        }
+      ]
+    },
+    {
+      "path": "src/hac_forward/variational_minkowski.py",
+      "original_path": "src/hac_forward/variational_minkowski.py",
+      "original_sha256": "3a01e360a4d0cae98401aa266bda7ed36da7c3bc1786f7cf2a42247b1174ba81",
+      "extracted_sha256": "0952a45cca13d7c954a51062db18690d061e086c9b3db8d27021b89f406bff73",
+      "unchanged_symbols": [
+        {
+          "symbols": [
+            "VariationalMinkowskiConfig"
+          ],
+          "original_line": 39,
+          "ast_sha256": "42627c34f20b43889c980895f6e78335a7ca84023c059485404bc600bed52973"
+        },
+        {
+          "symbols": [
+            "VariationalMinkowskiDiagnostics"
+          ],
+          "original_line": 86,
+          "ast_sha256": "c4dd7ab32a05a05cdcd560bfd687a62b1810af23d3965bd9c033cf40aa38aa73"
+        },
+        {
+          "symbols": [
+            "VariationalMinkowskiResult"
+          ],
+          "original_line": 123,
+          "ast_sha256": "f209477bc2f83ba57d43c6ab4b0769b9eb2936d79087b2f7fbf677cf8d1b95a7"
+        },
+        {
+          "symbols": [
+            "_SupportGeometry"
+          ],
+          "original_line": 137,
+          "ast_sha256": "f0bd63e655812026b71d81fd768dec35e686a8929528c8acd628c96f408a8e4e"
+        },
+        {
+          "symbols": [
+            "VariationalMinkowskiError"
+          ],
+          "original_line": 147,
+          "ast_sha256": "715b682855d8745d4eceee51a5c8d75717efe7a3f27892511cc4bd837af91f13"
+        },
+        {
+          "symbols": [
+            "solve_variational_minkowski"
+          ],
+          "original_line": 151,
+          "ast_sha256": "d2d898418b767b775350c089858aea53704a585569f793ff9b53be295afa4380"
+        },
+        {
+          "symbols": [
+            "_StageResult"
+          ],
+          "original_line": 334,
+          "ast_sha256": "f66642206df60ce129907130b85fa19320163dd1e4b4d0d250acd031f7c02ed6"
+        },
+        {
+          "symbols": [
+            "_newton_stage"
+          ],
+          "original_line": 344,
+          "ast_sha256": "98efb98d467464c3033f9ed0499c1a27f736d2cbdafaf7c8d57274d26390f05e"
+        },
+        {
+          "symbols": [
+            "_validate_measure"
+          ],
+          "original_line": 411,
+          "ast_sha256": "f6bb5ea38b145d5b4e825be3568e1dd954e7cc22b85570cba13fc740d735f2e1"
+        },
+        {
+          "symbols": [
+            "_geometry_from_positive_supports"
+          ],
+          "original_line": 456,
+          "ast_sha256": "85994c2b4cddf17add2271f346de5242edfba02c3699047f39dd37ee3123f56a"
+        },
+        {
+          "symbols": [
+            "_area_jacobian"
+          ],
+          "original_line": 571,
+          "ast_sha256": "e92f82996c8a483717d55cfa0e211854b451d95e7f18ea889d92f10d46204936"
+        },
+        {
+          "symbols": [
+            "_gauge_fixed_newton_step"
+          ],
+          "original_line": 586,
+          "ast_sha256": "c2b5b0ddafce0c6df49a0e9922c1607a7535f0b85d656698468833f60356f66c"
+        },
+        {
+          "symbols": [
+            "_area_log_rmse"
+          ],
+          "original_line": 626,
+          "ast_sha256": "16f3172645a3833041facf69006a2887ebcb765aca059927634e8e455bedcb3f"
+        },
+        {
+          "symbols": [
+            "_order_face"
+          ],
+          "original_line": 633,
+          "ast_sha256": "06495ee325fbd4c0463571b79cfc479e481cfb323472a8d3278ca081dac1283b"
+        },
+        {
+          "symbols": [
+            "_polygon_area"
+          ],
+          "original_line": 647,
+          "ast_sha256": "20bedf6140f8c52bc262bf95525c1d9011b97f3d25c9d4ea5560ed09faba3764"
+        },
+        {
+          "symbols": [
+            "_triangulate_polygon"
+          ],
+          "original_line": 652,
+          "ast_sha256": "371bb2ab3e2714cb26f045f9cb2e29ca2e4af79526e2b38e00211f2505d06289"
+        },
+        {
+          "symbols": [
+            "_plane_basis"
+          ],
+          "original_line": 667,
+          "ast_sha256": "45e3ecf97a92785b9d31efccea5f086c062e3924545f4d51c5d63b431bfd52a7"
+        },
+        {
+          "symbols": [
+            "_volume_centroid"
+          ],
+          "original_line": 677,
+          "ast_sha256": "b209c14713573172b5f9591e92937a26d2cd2af8d308b84f01a0d2d20717f2d0"
+        }
+      ]
+    }
+  ]
+}

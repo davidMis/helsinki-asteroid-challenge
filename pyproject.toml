@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ot-convex-hac2026"
+version = "1.0.0"
+description = "Optimal transport convex reconstruction for the Helsinki Asteroid Challenge 2026"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "jax[cpu]==0.10.1",
+  "jaxlib==0.10.1",
+  "ml_dtypes==0.5.4",
+  "opt_einsum==3.4.0",
+  "numpy==2.3.5",
+  "scipy==1.17.1",
+]
+
+[project.optional-dependencies]
+visualization = ["matplotlib==3.11.0"]
+evaluation = [
+  "meshio==5.3.5",
+  "trimesh==4.12.2",
+]
+
+[project.scripts]
+hac-reconstruct = "hac_forward.reconstruct:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

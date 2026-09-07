@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "status": "ready_for_first_submission",
+  "models": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "config_sha256": "7edff4198cd1a6b8a1d90512a5b280205f4226846b7db95cc5b0cf224d576e2b",
+  "config": {
+    "schema_version": 1,
+    "method": "optimal_transport_convex_reconstruction",
+    "acquisition": {
+      "source": "real",
+      "curve_type": "intensity",
+      "target_samples": 90,
+      "angles_degrees": [
+        0,
+        45,
+        90,
+        135,
+        225,
+        270,
+        315
+      ],
+      "view_labels": [
+        "horizontal_1",
+        "horizontal_2",
+        "top",
+        "bottom"
+      ],
+      "calibration_mode": "baseline",
+      "baseline": {
+        "name": "real_target_intensity_20260524",
+        "target_source": "real",
+        "curve_type": "intensity",
+        "phase_sign": -1,
+        "azimuth_offset": 0.0,
+        "azimuth_sign": 1,
+        "alpha_from": "horizontal",
+        "top_z_sign": 1,
+        "scattering": "lommel_seeliger",
+        "lommel_seeliger_weight": 0.0,
+        "visibility_mode": "view_zbuffer",
+        "occlusion_grid_size": 128,
+        "occlusion_depth_tolerance": 0.01,
+        "occlusion_softness": 0.005,
+        "phase_batch_size": 60,
+        "angle_phase_shifts_degrees": {
+          "45": -1.0,
+          "90": -7.0,
+          "135": -4.0,
+          "225": 4.0,
+          "270": 7.0,
+          "315": 1.0
+        },
+        "contrast_gain": 0.7349732235818749
+      }
+    },
+    "phase1": {
+      "shape": {
+        "n_rows": 8,
+        "l_max": 6,
+        "m_max": 6,
+        "min_degree": 2,
+        "lambert_coefficient": 100.0,
+        "lommel_seeliger_coefficient": 1.0,
+        "phase_amplitude": 0.0,
+        "phase_width": 0.1,
+        "phase_slope": 0.0,
+        "epsilon": 1e-09,
+        "reference_spheroid_radius": "released_cylinder_radius",
+        "reference_spheroid_gamma": 1.0
+      },
+      "objective": {
+        "raw_weight": 1.0,
+        "lightcurve_bhs_weight": 0.0,
+        "surface_bhs_weight": 0.0,
+        "surface_wasserstein_weight": 0.03,
+        "surface_moment_weight": 0.2,
+        "sobolev_weight": 0.0,
+        "sobolev_order": 2.0,
+        "lightcurve_epsilon": 0.001,
+        "surface_wasserstein_ground_cost": "chordal",
+        "surface_wasserstein_epsilon": 0.05,
+        "surface_wasserstein_iterations": 200
+      },
+      "optimizer": {
+        "starts": 3,
+        "steps": 300,
+        "learning_rate": 0.03,
+        "initial_scale": 0.15,
+        "lbfgs_iterations": 100,
+        "seed": 20260820
+      },
+      "optimizer_seed_rule": "base_seed_plus_model_id"
+    },
+    "quantization": {
+      "requested_facets": 64,
+      "config": {
+        "seed": 112459118,
+        "n_starts": 8,
+        "max_iterations": 200,
+        "objective_tolerance": 1e-13,
+        "center_tolerance_radians": 1e-12,
+        "closure_tolerance": 1e-10,
+        "unit_normal_tolerance": 1e-10,
+        "minimum_resultant": 2.2250738585072014e-308,
+        "transport_feasibility_tolerance": 1e-10,
+        "transport_mass_scale": 100000000.0,
+        "transport_marginal_residual_tolerance": 5e-10,
+        "restart_wasserstein2_tie_tolerance": 1e-12,
+        "normalized_output_mass_floor": 1e-08
+      }
+    },
+    "phase2": {
+      "area_log_rmse_tolerance": 1e-06,
+      "max_newton_iterations": 30,
+      "max_continuation_stages": 160,
+      "initial_continuation_step": 0.08,
+      "minimum_continuation_step": 2.5e-05,
+      "continuation_growth": 1.5,
+      "max_line_search_steps": 24,
+      "armijo_fraction": 0.0001,
+      "minimum_support_fraction": 1e-09,
+      "closure_tolerance": 1e-10,
+      "normal_rank_tolerance": 1e-10,
+      "vertex_merge_tolerance": 2e-09,
+      "qhull_options": "Qx"
+    },
+    "frame": {
+      "match_radius": true,
+      "z_min": -1.0,
+      "z_max": 1.0,
+      "translation": "volume centroid first, then z extrema only",
+      "orientation": "light direction (-1,0,0); original lightcurve zero phase; no post-fit rotation"
+    },
+    "verification": {
+      "parent_prediction_max_abs_tolerance": 5e-11,
+      "triangle_prediction_max_abs_tolerance": 1e-05,
+      "framed_closure_tolerance": 1e-10
+    },
+    "precision": "float64",
+    "selection": {
+      "policy": "fixed_public_calibration",
+      "lambda_w": 0.03,
+      "requested_facets": 64,
+      "calibration_models": [
+        1,
+        2,
+        3
+      ]
+    },
+    "cylinder_radii": {
+      "1": 1.12,
+      "2": 1.42,
+      "3": 0.88,
+      "4": 1.475,
+      "5": 1.22,
+      "6": 0.925,
+      "7": 1.205,
+      "8": 1.24,
+      "9": 0.67,
+      "10": 3.95
+    }
+  },
+  "source_sha256": {
+    "__init__.py": "c8ead2212d923efae355dfbbab195f331005704c29732352224c08a28c60bd70",
+    "area_measure_transform.py": "0cc057a8a765d159cf3007c8dd488eac30bfe750506e9afb57e71ef4107b407f",
+    "atomic_gaussian_image.py": "ebb9621368a525dddc391d7faea881e5851e8b5a888799ebc3ed7e396e27b4e4",
+    "atomic_refinement_solver.py": "8f209d10c53664c67ed2fd922a882d4df5a950dae749f8c73b3748c0d123aa8c",
+    "baseline.py": "8a39063664458816c7c4aef1bf39dc7727cd3e05bddf808c073f87cbe63797ab",
+    "bhs_phase1.py": "4151727731081044180e14f1e8dcc3b6392255a4cd8aa6c72617a17c96be1903",
+    "certification.py": "9b4cb6ef704c5bed64a09a354b1b9ac45ac9baf82ac173673c0b7fa90882c2cc",
+    "constants.py": "a2aae2b32b9d65bf37470aca42c7cc0898d1114644179f5246363022dde284dc",
+    "damit_model.py": "24be804043a3a2c495e8ee79c6e6d3e66edd0891b969e30199b6646f98d448ed",
+    "gaussian_bhs.py": "f87ea37f4d7b697e3c25d6851335afddb83b6a3780c3f80f2af2e872f179aed3",
+    "gaussian_bhs_inversion.py": "c838bd9b57fcf21c6bdf62883f8330cc35a212dc3eaaadbe5a4c1f2198b5842c",
+    "geometry.py": "49e4c875467a6dae9580b39ba4b537c97f7323ed8909cc13e66d8225eb101f2d",
+    "inversion.py": "6aaa0c1368d9dadc88fd3e9d4f568c277799dd56ab9c426509f8d3fffbee0f63",
+    "io_utils.py": "6ab8b3ea8fa608234d1386d8574016cdca2a87b5e4898fa09c4f4cffa73f148e",
+    "jax_model.py": "b8793c72386371b05ad58edc1142177f69239676b463df0ab1fbf60866422af5",
+    "lightcurves.py": "2c3ae17554d81fa93b1f089cbe403b2d148ede37a00ecc9a951db95956aca8c7",
+    "mesh_priors.py": "462134d85eb33952b3a128cf05971e7cfa5f72471d6a47344d0453b3f5e60e0e",
+    "metrics.py": "676dd1029d1f8414a64e4186aa948a46afb1342020789e0924e3405bcff5fa9e",
+    "package.py": "e362cd578649b4751c8ace883196326ddfc356a13cca4bd7d36147a39ce63498",
+    "paths.py": "68ece66f4692772611fe223e8d64dfe2859c7eb8dea09442a5b59bb4a824a0ce",
+    "reconstruct.py": "dec7dcc099d1d851b0f4791d7622fb08fbaff3cc7d4f9ddfcb190fa6aa68680a",
+    "semidiscrete_ot_quantization.py": "96517f8f23da835613fe05f86235d25ed39df44cddab1c8741e38c91a36d6a0a",
+    "spherical_wasserstein.py": "05998d606551931e39e5e0cfb723837b17649e7e9ee5068fe6f5c44298c581c8",
+    "stl.py": "37306d354e573d8a020a3471509dcd0cab659e6b667d1803b8e585d62ac79375",
+    "submission_validation.py": "207efd2ccfffe9662901ce04ceb00c9810ff6494927e11b9174b2c1e74e15797",
+    "surface_measure_artifact.py": "fa4dc5b717717b94bbcec1b302e12e622611a70003bbd596ee3a77a4c589b626",
+    "variational_minkowski.py": "0952a45cca13d7c954a51062db18690d061e086c9b3db8d27021b89f406bff73"
+  },
+  "records": [
+    {
+      "model_id": 4,
+      "stl": "AsteroidModel04.stl",
+      "stl_sha256": "cdb846b27b3869713bb8741e2f76425042504be4856ec5914fa07d2dc92ca32a",
+      "input": {
+        "model_id": 4,
+        "path": "AsteroidModel04_shape_secret/Asteroid4_lightcurve_data/Asteroid04_lightcurve_intensity.txt",
+        "size_bytes": 450668,
+        "sha256": "86e24cca3d1e40a0e49aa820896ed1faf8b75d2218783a3812887785d7e2fed5"
+      },
+      "run_manifest_sha256": "f1ce79030f2be263e7c5eeb1e61937224c0a3af47c66062cabaf9bebf0869eca",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.07866700148674023,
+        "intrinsic_weighted_rmse": 0.08008438894207723,
+        "framed_weighted_rmse": 0.08448401928602228,
+        "triangle_weighted_rmse": 0.08448401960344577,
+        "parent_prediction_max_abs": 8.881784197001252e-16,
+        "triangle_prediction_max_abs": 2.619754955190956e-07,
+        "framed_closure_norm": 8.091767853059542e-15,
+        "area_log_rmse": 2.9963243736007364e-07
+      },
+      "elapsed_seconds": 70.61952262499835
+    },
+    {
+      "model_id": 5,
+      "stl": "AsteroidModel05.stl",
+      "stl_sha256": "c80d43fdb8cbd3d2b80680efebc22165c3f28a1441b81abaea2e9b1ebdc82fa8",
+      "input": {
+        "model_id": 5,
+        "path": "AsteroidModel05_shape_secret/Asteroid5_lightcurve_data/Asteroid05_lightcurve_intensity.txt",
+        "size_bytes": 413945,
+        "sha256": "942ad381b0ce9653e4d6c5edfee0723653d06400fda064cb29143bca6f2d2d24"
+      },
+      "run_manifest_sha256": "4321da14200787d2fc6172b06b4c42d73a40a4d960c71dabc760ed04d2b0e8cb",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.05386554322277608,
+        "intrinsic_weighted_rmse": 0.05666018178615018,
+        "framed_weighted_rmse": 0.05700544261822898,
+        "triangle_weighted_rmse": 0.05700544240035511,
+        "parent_prediction_max_abs": 4.440892098500626e-16,
+        "triangle_prediction_max_abs": 2.102407481441304e-08,
+        "framed_closure_norm": 1.309349985667722e-16,
+        "area_log_rmse": 4.220129583352718e-08
+      },
+      "elapsed_seconds": 68.81759812499513
+    },
+    {
+      "model_id": 6,
+      "stl": "AsteroidModel06.stl",
+      "stl_sha256": "d1b8dd36286b0626480bbff0cf729a3defa164ca59349738738409a82fecd8a5",
+      "input": {
+        "model_id": 6,
+        "path": "AsteroidModel06_shape_secret/Asteroid6_lightcurve_data/Asteroid06_lightcurve_intensity.txt",
+        "size_bytes": 450668,
+        "sha256": "263e564eae783f6990fe5e666737deb01728d59e75c3d0b043b941e68533c088"
+      },
+      "run_manifest_sha256": "2cd8f37b3bcdd50b2dec923e5064ea05329ca7f5bf36930eb5defa2164ce9f36",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.12156228028413858,
+        "intrinsic_weighted_rmse": 0.12109199739178605,
+        "framed_weighted_rmse": 0.13455173622036387,
+        "triangle_weighted_rmse": 0.13455173628562495,
+        "parent_prediction_max_abs": 1.7763568394002505e-15,
+        "triangle_prediction_max_abs": 3.678849225252634e-09,
+        "framed_closure_norm": 4.075538896362433e-15,
+        "area_log_rmse": 1.0836146894197186e-11
+      },
+      "elapsed_seconds": 69.44646895900951
+    },
+    {
+      "model_id": 7,
+      "stl": "AsteroidModel07.stl",
+      "stl_sha256": "9464a6a408f6ee4d672dbe17384adc7d5e2d98c684b9a86534169df2931568bf",
+      "input": {
+        "model_id": 7,
+        "path": "AsteroidModel07_shape_secret/Asteroid7_lightcurve_data/Asteroid07_lightcurve_intensity.txt",
+        "size_bytes": 415050,
+        "sha256": "d6e63534293f4c7fe7935ce303e52e4b155c6705c8255f7944de6b3bf6201dbb"
+      },
+      "run_manifest_sha256": "e418df83226ec529de0e4769c90547f23b23c4d5862522084e5a6e70ac905fbf",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.11855788799158677,
+        "intrinsic_weighted_rmse": 0.11871773866321236,
+        "framed_weighted_rmse": 0.11771223573997903,
+        "triangle_weighted_rmse": 0.11771223607123363,
+        "parent_prediction_max_abs": 8.881784197001252e-16,
+        "triangle_prediction_max_abs": 1.0256102145334012e-07,
+        "framed_closure_norm": 1.597129531780176e-17,
+        "area_log_rmse": 8.490114892948088e-07
+      },
+      "elapsed_seconds": 69.84026633299072
+    },
+    {
+      "model_id": 8,
+      "stl": "AsteroidModel08.stl",
+      "stl_sha256": "a373a7e31fbd51fea7dcf4b578781a2e22d6d7c0695ba4aa0a2de453a552b0e2",
+      "input": {
+        "model_id": 8,
+        "path": "AsteroidModel08_shape_secret/Asteroid8_lightcurve_data/Asteroid08_lightcurve_intensity.txt",
+        "size_bytes": 450668,
+        "sha256": "1efb363b8c7c76ac27666c0ca6f724a3336300ea3f8d0eb580fdb8518ed1ab48"
+      },
+      "run_manifest_sha256": "5f8725e3256298468bb8e8d01326b2f11f0516b49e5fc21d955b8b9c880d7edd",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.03634799946833127,
+        "intrinsic_weighted_rmse": 0.04598335364064034,
+        "framed_weighted_rmse": 0.045976281868004364,
+        "triangle_weighted_rmse": 0.045976282141137824,
+        "parent_prediction_max_abs": 6.661338147750939e-16,
+        "triangle_prediction_max_abs": 1.4043377682959601e-08,
+        "framed_closure_norm": 2.2186157036941842e-16,
+        "area_log_rmse": 8.507722095147255e-11
+      },
+      "elapsed_seconds": 68.57772800000384
+    },
+    {
+      "model_id": 9,
+      "stl": "AsteroidModel09.stl",
+      "stl_sha256": "f268d4264acde081c78a62eb0e6a4039b3ef0ce986f8e984296baefb4aa84073",
+      "input": {
+        "model_id": 9,
+        "path": "AsteroidModel09_shape_secret/Asteroid9_lightcurve_data/Asteroid09_lightcurve_intensity.txt",
+        "size_bytes": 414015,
+        "sha256": "4b9e33dd718def188c1855fc73759ddc776d4c20d29a743a953cfce4fe4a6031"
+      },
+      "run_manifest_sha256": "8bd6b5de017e2b1acc59ad37e737062c9d82d28130ff38372f57e1b19a4319fa",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.05703536776578233,
+        "intrinsic_weighted_rmse": 0.061245750845860994,
+        "framed_weighted_rmse": 0.061141728118818274,
+        "triangle_weighted_rmse": 0.061141728116272824,
+        "parent_prediction_max_abs": 4.440892098500626e-16,
+        "triangle_prediction_max_abs": 4.823395238773287e-09,
+        "framed_closure_norm": 3.98609107286759e-17,
+        "area_log_rmse": 9.47606234288025e-11
+      },
+      "elapsed_seconds": 75.13932641700376
+    },
+    {
+      "model_id": 10,
+      "stl": "AsteroidModel10.stl",
+      "stl_sha256": "6d054a8f3fba2480a78ca87924d1b4cf5c3109df0c1f8ef59cad9c2f3662881a",
+      "input": {
+        "model_id": 10,
+        "path": "AsteroidModel10_shape_secret/Asteroid10_lightcurve_data/Asteroid010_lightcurve_intensity.txt",
+        "size_bytes": 450668,
+        "sha256": "f7fa84db867e0268c64635c98adf6e061e92230a621ee4b811bbb6aeecd9a895"
+      },
+      "run_manifest_sha256": "14bc4baf295c527aba9b271b7aed25c2c572c3a9eb10564b19444e4cf6aa8ef7",
+      "runtime": {
+        "python": "3.12.14",
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "packages": {
+          "jax": "0.10.1",
+          "jaxlib": "0.10.1",
+          "numpy": "2.3.5",
+          "scipy": "1.17.1",
+          "ml_dtypes": "0.5.4",
+          "opt_einsum": "3.4.0"
+        },
+        "jax_backend": "cpu",
+        "jax_enable_x64": true
+      },
+      "metrics": {
+        "requested_k": 64,
+        "effective_k": 64,
+        "phase1_weighted_rmse": 0.18489924336707747,
+        "intrinsic_weighted_rmse": 0.1849074724585476,
+        "framed_weighted_rmse": 0.18483918188393916,
+        "triangle_weighted_rmse": 0.18483918193315843,
+        "parent_prediction_max_abs": 1.0436096431476471e-14,
+        "triangle_prediction_max_abs": 9.001471346081757e-09,
+        "framed_closure_norm": 7.97675351570023e-15,
+        "area_log_rmse": 4.4015612645482834e-07
+      },
+      "elapsed_seconds": 69.15012308300356
+    }
+  ],
+  "validation_scope": "Topology and HAC frame; numerical convex-boundary single-cover certificate; strict facet-area fit; emitted-triangle brightness replay. No hidden-shape accuracy claim."
+}

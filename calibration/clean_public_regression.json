@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "all_passed": true,
+  "tolerance": 1e-06,
+  "reference_sha256": "55e9496f3465974273006091f01baed812dd6a6e8edcf38b06921e02499fd5d2",
+  "records": [
+    {
+      "model_id": 1,
+      "passed": true,
+      "errors": {
+        "masses": 0.0,
+        "normals": 0.0,
+        "harmonic_coefficients": 0.0,
+        "predicted": 0.0,
+        "vertex_hausdorff": 0.0,
+        "triangle_weighted_rmse": 0.0
+      },
+      "stl_byte_identical": true
+    },
+    {
+      "model_id": 2,
+      "passed": true,
+      "errors": {
+        "masses": 0.0,
+        "normals": 0.0,
+        "harmonic_coefficients": 0.0,
+        "predicted": 0.0,
+        "vertex_hausdorff": 0.0,
+        "triangle_weighted_rmse": 0.0
+      },
+      "stl_byte_identical": true
+    },
+    {
+      "model_id": 3,
+      "passed": true,
+      "errors": {
+        "masses": 0.0,
+        "normals": 0.0,
+        "harmonic_coefficients": 0.0,
+        "predicted": 0.0,
+        "vertex_hausdorff": 0.0,
+        "triangle_weighted_rmse": 0.0
+      },
+      "stl_byte_identical": true
+    }
+  ]
+}

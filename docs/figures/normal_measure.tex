@@ -1,0 +1,16 @@
+\begin{tikzpicture}[>=Stealth,scale=0.96]
+\filldraw[fill=wash,draw=ink,thick] (-1.4,-.8)--(1.4,-.8)--(1.4,.8)--(-1.4,.8)--cycle;
+\draw[very thick,color=accent](-1.4,.8)--(1.4,.8);
+\draw[->,thick,color=accent](0,.8)--(0,1.65) node[above,font=\small]{$n_{\rm top}$};
+\draw[->,thick,color=ink](1.4,0)--(2.25,0) node[above,font=\small]{$n_{\rm right}$};
+\node[font=\small] at (0,-1.18) {A rectangle in two dimensions};
+\draw[->,very thick,color=accent](3,-.0)--(4,0);
+\draw[draw=ink!50,thick](6,0)circle(1.12);
+\draw[ink!20] (4.75,0)--(7.25,0) (6,-1.25)--(6,1.25);
+\fill[color=accent](6,1.12)circle(.16);
+\fill[color=accent](6,-1.12)circle(.16);
+\fill[color=ink](4.88,0)circle(.11);
+\fill[color=ink](7.12,0)circle(.11);
+\node[font=\small,align=left,anchor=west] at (7.55,.65) {A dot's location is a normal.\\A dot's weight is edge length.};
+\node[font=\small] at (6,-1.65) {Its measure on the unit circle};
+\end{tikzpicture}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "commands": [
+    "python scripts/prepare_data.py /path/to/released/data",
+    "python -m hac_forward.reconstruct --data-dir data --models 4,5,6,7,8,9,10 --output-dir runs/secret --config configs/submission.json",
+    "python -m hac_forward.package --run-dir runs/secret --output-dir results --config configs/submission.json"
+  ],
+  "config_sha256": "7edff4198cd1a6b8a1d90512a5b280205f4226846b7db95cc5b0cf224d576e2b",
+  "public_checks_passed_before_secret_fitting": true,
+  "models": [
+    {
+      "model_id": 4,
+      "stl_sha256": "cdb846b27b3869713bb8741e2f76425042504be4856ec5914fa07d2dc92ca32a",
+      "elapsed_seconds": 70.61952262499835,
+      "run_manifest_sha256": "f1ce79030f2be263e7c5eeb1e61937224c0a3af47c66062cabaf9bebf0869eca"
+    },
+    {
+      "model_id": 5,
+      "stl_sha256": "c80d43fdb8cbd3d2b80680efebc22165c3f28a1441b81abaea2e9b1ebdc82fa8",
+      "elapsed_seconds": 68.81759812499513,
+      "run_manifest_sha256": "4321da14200787d2fc6172b06b4c42d73a40a4d960c71dabc760ed04d2b0e8cb"
+    },
+    {
+      "model_id": 6,
+      "stl_sha256": "d1b8dd36286b0626480bbff0cf729a3defa164ca59349738738409a82fecd8a5",
+      "elapsed_seconds": 69.44646895900951,
+      "run_manifest_sha256": "2cd8f37b3bcdd50b2dec923e5064ea05329ca7f5bf36930eb5defa2164ce9f36"
+    },
+    {
+      "model_id": 7,
+      "stl_sha256": "9464a6a408f6ee4d672dbe17384adc7d5e2d98c684b9a86534169df2931568bf",
+      "elapsed_seconds": 69.84026633299072,
+      "run_manifest_sha256": "e418df83226ec529de0e4769c90547f23b23c4d5862522084e5a6e70ac905fbf"
+    },
+    {
+      "model_id": 8,
+      "stl_sha256": "a373a7e31fbd51fea7dcf4b578781a2e22d6d7c0695ba4aa0a2de453a552b0e2",
+      "elapsed_seconds": 68.57772800000384,
+      "run_manifest_sha256": "5f8725e3256298468bb8e8d01326b2f11f0516b49e5fc21d955b8b9c880d7edd"
+    },
+    {
+      "model_id": 9,
+      "stl_sha256": "f268d4264acde081c78a62eb0e6a4039b3ef0ce986f8e984296baefb4aa84073",
+      "elapsed_seconds": 75.13932641700376,
+      "run_manifest_sha256": "8bd6b5de017e2b1acc59ad37e737062c9d82d28130ff38372f57e1b19a4319fa"
+    },
+    {
+      "model_id": 10,
+      "stl_sha256": "6d054a8f3fba2480a78ca87924d1b4cf5c3109df0c1f8ef59cad9c2f3662881a",
+      "elapsed_seconds": 69.15012308300356,
+      "run_manifest_sha256": "14bc4baf295c527aba9b271b7aed25c2c572c3a9eb10564b19444e4cf6aa8ef7"
+    }
+  ],
+  "package_manifest_sha256": "5c9f3d57587b22bbda1b338084a91e02ce2195d8d25c680e7379c841cc4a970f",
+  "preview_sha256": "c8e001a289b27be3e1ff7c34b8a5c9c7831b731657418345f9794602c717c81b",
+  "preview_script_sha256": "e37cc9a1a7f31cb837735b86344f3b3cd44bc2540aef76840a5c85b96b06170a"
+}

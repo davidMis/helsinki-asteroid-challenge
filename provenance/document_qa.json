@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-07",
+  "pdf_sha256": "30683c6e98a7abf048ed7574e9f8d9ea3da0794102b369cccfa8397ad847d6a9",
+  "page_count": 8,
+  "visual_review": {
+    "renderer": "pdftoppm",
+    "dpi": 110,
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "result": "All final pages visually reviewed; no clipping, overlaps, orphan bibliography entries, or unreadable figure labels."
+  },
+  "latex_checks": {
+    "build_success": true,
+    "overfull_box_warnings": 0,
+    "underfull_box_warnings": 0,
+    "other_warnings": 0
+  },
+  "figure_sources": [
+    "figures/pipeline.tex",
+    "figures/lighting.tex",
+    "figures/normal_measure.tex"
+  ]
+}

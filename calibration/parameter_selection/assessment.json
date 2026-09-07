@@ -1,0 +1,629 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-07",
+  "status": "assessment_only_no_production_selector_promoted",
+  "recommendation": {
+    "lambda_w": 0.03,
+    "requested_k": 64
+  },
+  "interpretation": "Prior public calibration outcomes are already known. The two rules are declared before extracting their input diagnostics; their subsequent public score comparison is conditional calibration, not independent validation.",
+  "rule": {
+    "schema_version": 1,
+    "name": "bounded_input_only_lcurve_assessment_v1",
+    "lambda_values": [
+      0.03,
+      0.1,
+      0.3,
+      1.0
+    ],
+    "requested_k_values": [
+      7,
+      16,
+      32,
+      64
+    ],
+    "lambda_curve": [
+      "log(sqrt(2*objective_terms.raw))",
+      "log(sqrt(2*objective_terms.surface_wasserstein2))"
+    ],
+    "lambda_regularizer_semantics": "debiased finite-iteration Sinkhorn divergence, not exact LP",
+    "lambda_fixed_other_penalty": "surface_moment_weight=0.2 remains fixed",
+    "facet_curve": [
+      "log(effective_k)",
+      "log(sqrt(dense_parent_to_sparse_w2_squared))"
+    ],
+    "facet_regularizer_semantics": "exact balanced chordal transport from dense parent to emitted closed child",
+    "corner": "largest positive signed Menger curvature of consecutive interior triples",
+    "coordinates": "natural logs, no axis rescaling",
+    "ties": "larger interior parameter",
+    "admissibility": "finite positive coordinates; strictly increasing x; nonincreasing y",
+    "fallback": "lambda=0.03 and requested_k=64 when the corresponding curve is inadmissible or has no positive corner",
+    "policies_assessed": [
+      "lcurve_lambda_fixed_k64",
+      "lcurve_lambda_then_facets"
+    ],
+    "interpretation": "Prior public calibration outcomes are already known. The two rules are declared before extracting their input diagnostics; their subsequent public score comparison is conditional calibration, not independent validation."
+  },
+  "input_only_models": [
+    {
+      "model_id": 1,
+      "lambda_curve": {
+        "parameters": [
+          0.03,
+          0.1,
+          0.3,
+          1.0
+        ],
+        "x": [
+          0.02931920606688135,
+          0.030149634594598167,
+          0.031897347871049184,
+          0.035445189677118405
+        ],
+        "y": [
+          0.04602927779040881,
+          0.035619596738938,
+          0.02617569240129584,
+          0.01627611417213258
+        ],
+        "selected": 0.1,
+        "log_coordinates": [
+          [
+            -3.5295124805403573,
+            -3.078477611251987
+          ],
+          [
+            -3.5015824754645357,
+            -3.3348593223824046
+          ],
+          [
+            -3.4452324114861463,
+            -3.642924069803835
+          ],
+          [
+            -3.3397677283812954,
+            -4.118056634113513
+          ]
+        ],
+        "interior_curvatures": [
+          {
+            "parameter": 0.1,
+            "curvature": 0.2535177695153983
+          },
+          {
+            "parameter": 0.3,
+            "curvature": 0.09378693762127845
+          }
+        ],
+        "valid": true,
+        "reason": "interior_corner"
+      },
+      "facet_curve": {
+        "parameters": [
+          7,
+          16,
+          32,
+          64
+        ],
+        "x": [
+          7,
+          16,
+          32,
+          64
+        ],
+        "y": [
+          0.528971508395321,
+          0.3492001549063605,
+          0.249047362707001,
+          0.17196939646453213
+        ],
+        "selected": 16,
+        "log_coordinates": [
+          [
+            1.9459101490553132,
+            -0.6368207079404282
+          ],
+          [
+            2.772588722239781,
+            -1.0521100114132358
+          ],
+          [
+            3.4657359027997265,
+            -1.3901121889306736
+          ],
+          [
+            4.1588830833596715,
+            -1.7604387455314552
+          ]
+        ],
+        "interior_curvatures": [
+          {
+            "parameter": 16,
+            "curvature": 0.013944305583070893
+          },
+          {
+            "parameter": 32,
+            "curvature": -0.04749634406531674
+          }
+        ],
+        "valid": true,
+        "reason": "interior_corner"
+      },
+      "parents": [
+        {
+          "lambda_w": 0.03,
+          "raw": 0.0004298079221961261,
+          "surface_wasserstein2": 0.0010593472069533108,
+          "surface_moment": 6.65452825312821e-05,
+          "parent_metadata_sha256": "c02d35aba535d7d0472c6492f3ecff212f3e21bb8032b55d30aca1e4d2b02e5c"
+        },
+        {
+          "lambda_w": 0.1,
+          "raw": 0.00045450023309389525,
+          "surface_wasserstein2": 0.0006343778359222813,
+          "surface_moment": 6.218483105436209e-05,
+          "parent_metadata_sha256": "2fce2f2405da93bcb71ba5c9c5a900a45b2a98af3ef9f721d75891a3d955e408"
+        },
+        {
+          "lambda_w": 0.3,
+          "raw": 0.0005087204006033629,
+          "surface_wasserstein2": 0.00034258343634362837,
+          "surface_moment": 5.0044645972193546e-05,
+          "parent_metadata_sha256": "981efa2d14da6e11f20dc3106189a08093d37b5ffdff16a03004a4d756626de0"
+        },
+        {
+          "lambda_w": 1.0,
+          "raw": 0.0006281807356234506,
+          "surface_wasserstein2": 0.00013245594627214752,
+          "surface_moment": 2.8270774915230845e-05,
+          "parent_metadata_sha256": "825a6092af53ddb99ad939ae128c49aa1165bf387893dc88eebb0df010599362"
+        }
+      ],
+      "selected_parameters": {
+        "lcurve_lambda_fixed_k64": {
+          "lambda_w": 0.1,
+          "requested_k": 64,
+          "effective_k": 64
+        },
+        "lcurve_lambda_then_facets": {
+          "lambda_w": 0.1,
+          "requested_k": 16,
+          "effective_k": 16
+        },
+        "shared_calibrated": {
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 64
+        }
+      }
+    },
+    {
+      "model_id": 2,
+      "lambda_curve": {
+        "parameters": [
+          0.03,
+          0.1,
+          0.3,
+          1.0
+        ],
+        "x": [
+          0.28302032179602504,
+          0.2817340060277463,
+          0.29320305464550905,
+          0.33838868648739917
+        ],
+        "y": [
+          0.43772781649446646,
+          0.4240264392019752,
+          0.3481439373323374,
+          0.20845170120499573
+        ],
+        "selected": 0.03,
+        "log_coordinates": [
+          [
+            -1.2622365754504843,
+            -0.8261579852979357
+          ],
+          [
+            -1.2667918942121434,
+            -0.8579594690858398
+          ],
+          [
+            -1.2268898907240844,
+            -1.0551392716979924
+          ],
+          [
+            -1.0835600841747846,
+            -1.5680479134749339
+          ]
+        ],
+        "interior_curvatures": [
+          {
+            "parameter": 0.1,
+            "curvature": 2.894489323013315
+          },
+          {
+            "parameter": 0.3,
+            "curvature": 0.19843931162352976
+          }
+        ],
+        "valid": false,
+        "reason": "nonmonotone_tradeoff"
+      },
+      "facet_curve": {
+        "parameters": [
+          7,
+          16,
+          32,
+          64
+        ],
+        "x": [
+          7,
+          16,
+          32,
+          45
+        ],
+        "y": [
+          0.1297398318231051,
+          0.06310064180912242,
+          0.0013939819166353246,
+          1.4519166079673815e-05
+        ],
+        "selected": 64,
+        "log_coordinates": [
+          [
+            1.9459101490553132,
+            -2.042224127459012
+          ],
+          [
+            2.772588722239781,
+            -2.7630243381852324
+          ],
+          [
+            3.4657359027997265,
+            -6.575590939012505
+          ],
+          [
+            3.8066624897703196,
+            -11.140040982746287
+          ]
+        ],
+        "interior_curvatures": [
+          {
+            "parameter": 16,
+            "curvature": -0.2610204292663235
+          },
+          {
+            "parameter": 32,
+            "curvature": -0.02490200677841151
+          }
+        ],
+        "valid": false,
+        "reason": "no_positive_corner"
+      },
+      "parents": [
+        {
+          "lambda_w": 0.03,
+          "raw": 0.040050251274762784,
+          "surface_wasserstein2": 0.09580282066650665,
+          "surface_moment": 0.0013922090869896526,
+          "parent_metadata_sha256": "3b1e9c8ab75af561b66791f26de92bc15f3dce06835fd15687d86acfa88b1cee"
+        },
+        {
+          "lambda_w": 0.1,
+          "raw": 0.03968702507622109,
+          "surface_wasserstein2": 0.08989921057115319,
+          "surface_moment": 0.001159810832042381,
+          "parent_metadata_sha256": "e8e7807920b0727225c30717fb12be2c9980c29d1eb6f6be76de83177de79e77"
+        },
+        {
+          "lambda_w": 0.3,
+          "raw": 0.04298401562672868,
+          "surface_wasserstein2": 0.06060210055063123,
+          "surface_moment": 0.0012103004640959191,
+          "parent_metadata_sha256": "014cf9e6bfdc3e44df579fead78d5079112f0cb4f4647828855713604780dc7a"
+        },
+        {
+          "lambda_w": 1.0,
+          "raw": 0.05725345157133366,
+          "surface_wasserstein2": 0.021726055867628408,
+          "surface_moment": 0.00033073444439205355,
+          "parent_metadata_sha256": "e9346de61adadb00e7498ba6edc5474637fa97a33f4fc8f4541ddbdbe431fd3d"
+        }
+      ],
+      "selected_parameters": {
+        "lcurve_lambda_fixed_k64": {
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 45
+        },
+        "lcurve_lambda_then_facets": {
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 45
+        },
+        "shared_calibrated": {
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 45
+        }
+      }
+    },
+    {
+      "model_id": 3,
+      "lambda_curve": {
+        "parameters": [
+          0.03,
+          0.1,
+          0.3,
+          1.0
+        ],
+        "x": [
+          0.060183812020238044,
+          0.0649112805039367,
+          0.07261705364321987,
+          0.08891139877415481
+        ],
+        "y": [
+          0.15048996690172872,
+          0.11415822129335694,
+          0.08900141516586453,
+          0.060995060261862216
+        ],
+        "selected": 0.1,
+        "log_coordinates": [
+          [
+            -2.8103518661466467,
+            -1.8938588621202161
+          ],
+          [
+            -2.73473385675595,
+            -2.170169886756969
+          ],
+          [
+            -2.6225554860688187,
+            -2.4191030086363616
+          ],
+          [
+            -2.420114924500064,
+            -2.7969623974015616
+          ]
+        ],
+        "interior_curvatures": [
+          {
+            "parameter": 0.1,
+            "curvature": 0.557966679458915
+          },
+          {
+            "parameter": 0.3,
+            "curvature": 0.19507476468125864
+          }
+        ],
+        "valid": true,
+        "reason": "interior_corner"
+      },
+      "facet_curve": {
+        "parameters": [
+          7,
+          16,
+          32,
+          64
+        ],
+        "x": [
+          7,
+          16,
+          32,
+          64
+        ],
+        "y": [
+          0.49852353894196516,
+          0.32632076102757207,
+          0.23757295528473407,
+          0.16481867359459476
+        ],
+        "selected": 16,
+        "log_coordinates": [
+          [
+            1.9459101490553132,
+            -0.6961044711524935
+          ],
+          [
+            2.772588722239781,
+            -1.1198744518243766
+          ],
+          [
+            3.4657359027997265,
+            -1.437280522531354
+          ],
+          [
+            4.1588830833596715,
+            -1.8029093572791193
+          ]
+        ],
+        "interior_curvatures": [
+          {
+            "parameter": 16,
+            "curvature": 0.05234475994672727
+          },
+          {
+            "parameter": 32,
+            "curvature": -0.07240411148049263
+          }
+        ],
+        "valid": true,
+        "reason": "interior_corner"
+      },
+      "parents": [
+        {
+          "lambda_w": 0.03,
+          "raw": 0.0018110456146436746,
+          "surface_wasserstein2": 0.011323615069041705,
+          "surface_moment": 0.002044626092430257,
+          "parent_metadata_sha256": "4855b654dc1780be166df28824aa07785886f90933c438db643eba8a77d0a1ea"
+        },
+        {
+          "lambda_w": 0.1,
+          "raw": 0.002106737168330376,
+          "surface_wasserstein2": 0.006516049744431526,
+          "surface_moment": 0.0018552014971783255,
+          "parent_metadata_sha256": "a3b12ac36298ce5710d1cea1b6bcfff05c545b3c8b7ffbae93154e2cb5e7f439"
+        },
+        {
+          "lambda_w": 0.3,
+          "raw": 0.002636618239911136,
+          "surface_wasserstein2": 0.00396062595076329,
+          "surface_moment": 0.0014653187806674582,
+          "parent_metadata_sha256": "33deaa016c889069f57c714bb50fac454d6e51d2a2f147b1e2afd157335a70ab"
+        },
+        {
+          "lambda_w": 1.0,
+          "raw": 0.0039526184159883885,
+          "surface_wasserstein2": 0.0018601986881741014,
+          "surface_moment": 0.0008158777820455578,
+          "parent_metadata_sha256": "9ea345655defa14fdb31b86ce60a5043f17483c3f1764c971eb5779c15cb86b0"
+        }
+      ],
+      "selected_parameters": {
+        "lcurve_lambda_fixed_k64": {
+          "lambda_w": 0.1,
+          "requested_k": 64,
+          "effective_k": 64
+        },
+        "lcurve_lambda_then_facets": {
+          "lambda_w": 0.1,
+          "requested_k": 16,
+          "effective_k": 16
+        },
+        "shared_calibrated": {
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 64
+        }
+      }
+    }
+  ],
+  "subsequent_public_comparison": {
+    "shared_calibrated": {
+      "models": [
+        {
+          "model_id": 1,
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 64,
+          "voxel_score": 0.9626254916925967,
+          "projection_score": 0.9910815093508886,
+          "total_score": 1.9537070010434854,
+          "candidate_stl_sha256": "ff0179bc8a3a50cc6864b04c24e9216244b05de1382a5609f80bf58bc0850fb3"
+        },
+        {
+          "model_id": 2,
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 45,
+          "voxel_score": 0.894000129307558,
+          "projection_score": 0.9675972434871638,
+          "total_score": 1.861597372794722,
+          "candidate_stl_sha256": "5a7e74ce5855dca799c1fb188d6b593798b32cd56cedcf62bbb5b670d02f0274"
+        },
+        {
+          "model_id": 3,
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 64,
+          "voxel_score": 0.7268964327804766,
+          "projection_score": 0.9506453015991585,
+          "total_score": 1.677541734379635,
+          "candidate_stl_sha256": "e67d15daf566c870a1981afb68a0961b6ef887e01cb208523e6830302dea3af0"
+        }
+      ],
+      "mean_total_score": 1.8309487027392806
+    },
+    "lcurve_lambda_fixed_k64": {
+      "models": [
+        {
+          "model_id": 1,
+          "lambda_w": 0.1,
+          "requested_k": 64,
+          "effective_k": 64,
+          "voxel_score": 0.9609520791521425,
+          "projection_score": 0.989824864642483,
+          "total_score": 1.9507769437946254,
+          "candidate_stl_sha256": "6b7878bcecd03c6fa1c6929bfd5f6a31ed6686780db402138c56a7d30f0b2150"
+        },
+        {
+          "model_id": 2,
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 45,
+          "voxel_score": 0.894000129307558,
+          "projection_score": 0.9675972434871638,
+          "total_score": 1.861597372794722,
+          "candidate_stl_sha256": "5a7e74ce5855dca799c1fb188d6b593798b32cd56cedcf62bbb5b670d02f0274"
+        },
+        {
+          "model_id": 3,
+          "lambda_w": 0.1,
+          "requested_k": 64,
+          "effective_k": 64,
+          "voxel_score": 0.7044088176352705,
+          "projection_score": 0.9490883586638172,
+          "total_score": 1.6534971762990878,
+          "candidate_stl_sha256": "a520fd3543e16a7f1e9d9ddb6f3eece724e8c8e7f0ade6444dfc3ed0283681af"
+        }
+      ],
+      "mean_total_score": 1.821957164296145
+    },
+    "lcurve_lambda_then_facets": {
+      "models": [
+        {
+          "model_id": 1,
+          "lambda_w": 0.1,
+          "requested_k": 16,
+          "effective_k": 16,
+          "voxel_score": 0.863687251483059,
+          "projection_score": 0.9698351049647531,
+          "total_score": 1.833522356447812,
+          "candidate_stl_sha256": "03f43bc7ff5641c11f4cf0a83face9fd1b09017f8585097c6d12d7cea091b4f7"
+        },
+        {
+          "model_id": 2,
+          "lambda_w": 0.03,
+          "requested_k": 64,
+          "effective_k": 45,
+          "voxel_score": 0.894000129307558,
+          "projection_score": 0.9675972434871638,
+          "total_score": 1.861597372794722,
+          "candidate_stl_sha256": "5a7e74ce5855dca799c1fb188d6b593798b32cd56cedcf62bbb5b670d02f0274"
+        },
+        {
+          "model_id": 3,
+          "lambda_w": 0.1,
+          "requested_k": 16,
+          "effective_k": 16,
+          "voxel_score": 0.7333100757984206,
+          "projection_score": 0.9633912782743284,
+          "total_score": 1.696701354072749,
+          "candidate_stl_sha256": "009deae8ee27f26f068be9997ecefb405d7bf980117382c488a4f204926c1bfb"
+        }
+      ],
+      "mean_total_score": 1.7972736944384275
+    }
+  },
+  "development_provenance": [
+    {
+      "development_artifact": "outputs/submission_preparation/20260907/selection/declared_rule.json",
+      "sha256": "4c2905c627861cb2250129b163b67b8b339cd7c5ceb4a00448fc0e968ff7711d",
+      "size_bytes": 1429
+    },
+    {
+      "development_artifact": "outputs/submission_preparation/20260907/selection/input_only_selection.json",
+      "sha256": "426799fb536a070b28f0627726cee66080717ed9997b4d0039d140ce93edf8a9",
+      "size_bytes": 19628
+    },
+    {
+      "development_artifact": "outputs/submission_preparation/20260907/selection/public_comparison.json",
+      "sha256": "e1c401d0e67d76519b457cf4f250c690b0249789db3c9f85b6a1d87bb5dbbf48",
+      "size_bytes": 7723
+    }
+  ]
+}

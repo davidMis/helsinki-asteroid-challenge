@@ -1,0 +1,15 @@
+\begin{tikzpicture}[>=Stealth,node distance=0.6cm,
+ block/.style={draw=ink!50,rounded corners=2pt,fill=wash,text width=2.85cm,minimum height=1.6cm,align=center,font=\small},
+ smallnote/.style={align=center,font=\footnotesize,text=ink!85}]
+\node[block] (a) {\textbf{Fit a measure}\\Area allocated to\\surface directions};
+\node[block,right=of a] (b) {\textbf{Choose facets}\\OT quantization\\and exact balance};
+\node[block,right=of b] (c) {\textbf{Build a body}\\Solve for facet\\plane positions};
+\node[block,right=of c] (d) {\textbf{Export mesh}\\Apply size prior;\\replay the STL};
+\draw[->,thick,color=accent] (a)--(b);
+\draw[->,thick,color=accent] (b)--(c);
+\draw[->,thick,color=accent] (c)--(d);
+\node[smallnote,below=0.25cm of a] {512 directions\\45 shape coefficients};
+\node[smallnote,below=0.25cm of b] {At most $K$\\effective directions};
+\node[smallnote,below=0.25cm of c] {One closed\\convex polyhedron};
+\node[smallnote,below=0.25cm of d] {A mesh in the\\challenge frame};
+\end{tikzpicture}
