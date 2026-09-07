@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_commit": "8d16dbb",
+  "procedure": [
+    "git clone --no-local of the committed repository to an empty temporary directory",
+    "Build a wheel from that clone without resolving new dependencies",
+    "Replace the editable installation with the built wheel in the previously clean environment",
+    "Run all 24 core tests from the clone",
+    "Import model1 data with the cloned prepare_data.py",
+    "Run python -I -m hac_forward.reconstruct for model1 from the clone using the installed wheel"
+  ],
+  "installed_package_from_site_packages": true,
+  "no_source_checkout_import": true,
+  "isolated_python_mode": true,
+  "core_tests_passed": 24,
+  "model_id": 1,
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "packages": {
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "numpy": "2.3.5",
+      "scipy": "1.17.1",
+      "ml_dtypes": "0.5.4",
+      "opt_einsum": "3.4.0"
+    },
+    "jax_backend": "cpu",
+    "jax_enable_x64": true
+  },
+  "config_sha256": "7edff4198cd1a6b8a1d90512a5b280205f4226846b7db95cc5b0cf224d576e2b",
+  "source_hashes_equal_all_secret_runs": true,
+  "errors": {
+    "masses": 0.0,
+    "normals": 0.0,
+    "harmonic_coefficients": 0.0
+  },
+  "stl_byte_identical": true,
+  "stl_sha256": "ff0179bc8a3a50cc6864b04c24e9216244b05de1382a5609f80bf58bc0850fb3",
+  "wheel_sha256": "75c154cbedc88c2027930a9e5d367a0f14d6d6c45ed92a2de2b7b18ab70756af",
+  "elapsed_seconds": 62.68363574999967,
+  "note": "No reconstruction algorithm change followed this commit; later commit records this receipt and handoff status."
+}

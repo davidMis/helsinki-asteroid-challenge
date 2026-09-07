@@ -5,7 +5,7 @@ the submission remain manual steps.
 
 1. Create a **private** GitHub repository from this directory and grant the
    organizers access. Preserve this independent Git history when uploading.
-2. Publish a GitHub release from the local first-submission tag. The organizers
+2. Publish a GitHub release from the local `v1.0.0-rc1` tag. The organizers
    consider the latest release before the deadline. Attach the seven STL files
    from `results/` and the method PDF; retain the manifest and checksums.
 3. Send the seven reconstructions and the private repository/release link to

@@ -5,6 +5,7 @@ Checked September 7, 2026. All seven runs completed without retries or fallback 
 ## Reproducibility
 
 - A newly created Python 3.12.14 virtual environment installed the exact numerical dependency versions from the package configuration.
+- A fresh Git clone built a wheel, which replaced the editable installation. Python isolated mode reconstructed Model 1 with identical STL bytes and zero coefficient/mass/normal differences, importing from the installed wheel rather than either source checkout. All 24 core tests also passed from the clone; see `provenance/clean_clone_replay.json`.
 - Public Models 1–3 matched the original calibrated coefficients, masses, normals, predictions and final STL bytes exactly. See `calibration/clean_public_regression.json` and `calibration/clean_environment.json`.
 - The standalone official Python/MATLAB evaluation reproduced all three selected public scores exactly, with mean total **1.8309487027392806**. See `calibration/official_replay.json`.
 - All 24 core/extraction/certification/packaging tests passed. Three optional evaluation tests passed, including native MATLAB and Python identity controls. Ruff passed.
