@@ -14,7 +14,6 @@ A human-authored replacement is forthcoming.
 
 We used LLMs extensively during the course of this project, including to generate text, code, and this README. 
 We did not always check the outputs carefully. 
-In particular, we make no claim as to the originality of our approach at this time.
 
 ## Install
 
