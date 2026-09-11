@@ -1,7 +1,8 @@
 # Optimal transport convex reconstruction — HAC 2026
 
 Submission by the Rice University team for the [Helsinki Asteroid Challenge 2026](https://fips.fi/data-challenges/helsinki-asteroid-challenge-2026/).
-We reconstruct a convex shape from lightcurve data using a modification of the classical method developed by Kaasalainen, Torppa, Ďurech and others.
+We reconstruct a convex shape from lightcurve data using a modification of the classical methods developed by Kaasalainen, Torppa, Ďurech and others.
+
 In particular, our approach integrates techniques from computational optimal transport to reconstruct a continuous surface measure on a sphere, then convert it to a mixture of Diracs corresponding to a convex polyhedron.
 
 A preliminary explanation of our approach can be found in [docs/method.pdf](docs/method.pdf). 
